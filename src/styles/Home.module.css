@@ -1,5 +1,5 @@
 .title{
-  width: min(80%,1200px);
+  width: min(95%,1200px);
   margin: 0 auto;
 }
 
@@ -11,9 +11,13 @@
 
 .container{
   background-color: rgb(235, 230, 224);
-  width: min(80%,1200px);
+  width: min(100%,1200px);
   min-width: 350px;
   margin: 0 auto;
+}
+
+.container h2{
+  margin-left: 10px;
 }
 
 .wrapper{
@@ -23,7 +27,7 @@
 }
 
 .wrapper div{
-  width: min(90%,500px);
+  width: min(95%,500px);
   padding: 5px;
   margin: 5px auto;
   background-color: aliceblue;
@@ -31,12 +35,12 @@
 }
 
 .url_p {
-  font-size: 90%;
+  font-size: 100%;
 }
 
 @media screen and (max-width:600px){
   .url_p{
-    font-size: 65%;
+    font-size: 75%;
   }
 }
 
