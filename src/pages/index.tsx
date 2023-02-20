@@ -32,28 +32,30 @@ export default function Home() {
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
             <div>
               <h3>ザ・サンパツヤ</h3>
-              <h3>feature</h3>
-              <p>texttexttext</p>
+              <p className={styles.url_p}>url: <a href="https://xs622417.xsrv.jp/homepage_test/index.html">https://xs622417.xsrv.jp/homepage_test/index.html</a></p>
+              <h3>Feature</h3>
+              <p>『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
+              <p>SEO対策も施しているため、仮のサイトでありながらGoogleでの検索順位は上位となっています。</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3>環境開発株式会社</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3>瀬戸珈琲</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3>site name</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
@@ -69,28 +71,28 @@ export default function Home() {
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
             <div>
               <h3>ToDoアプリ</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3>じゃんけん</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3>スロット</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3>仕事効率化</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
@@ -106,28 +108,28 @@ export default function Home() {
           <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
             <div>
               <h3>Swiper</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3>流れる文字</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3>自由に移動</h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
               <h3></h3>
-              <h3>feature</h3>
+              <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>

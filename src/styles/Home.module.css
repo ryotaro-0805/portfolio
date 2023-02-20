@@ -1,17 +1,17 @@
 .title{
-  width: min(80%,1000px);
+  width: min(80%,1200px);
   margin: 0 auto;
 }
 
 .skill_wrapper{
-  width: min(80%,1000px);
+  width: min(80%,1200px);
   min-width: 350px;
   margin: 20px auto;  
 }
 
 .container{
   background-color: rgb(235, 230, 224);
-  width: min(80%,1000px);
+  width: min(80%,1200px);
   min-width: 350px;
   margin: 0 auto;
 }
@@ -22,17 +22,22 @@
   margin: 20px auto;
 }
 
-/* @media screen and (max-width:800px){
-  .wrapper{
-    display:block;
-  } 
+@media screen and (max-width:500px){
+  .url_p a{
 
-} */
+    font-size: 75%;
+  }
+}
 
 .wrapper div{
-  width: min(80%,400px);
+  width: min(90%,500px);
   margin: 5px auto;
   background-color: aliceblue;
+  border: solid 1px black;
+}
+
+.url_p {
+  font-size: 80%;
 }
 
 .footer{
