@@ -31,13 +31,15 @@ export default function Home() {
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
             <div>
-              <h3>ザ・サンパツヤ</h3>
-              <p className={styles.url_p}>url: <a href="https://xs622417.xsrv.jp/homepage_test/index.html">https://xs622417.xsrv.jp/homepage_test/index.html</a></p>
-              <h3>Feature</h3>
-              <p>『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
-              <p>SEO対策も施しているため、仮のサイトでありながらGoogleでの検索順位は上位となっています。</p>
-              <h3>trouble point</h3>
-              <p>texttexttext</p>
+              <a href="https://xs622417.xsrv.jp/homepage_test/index.html">
+                <h3>ザ・サンパツヤ</h3>
+                <p className={styles.url_p}>url : https://xs622417.xsrv.jp/homepage_test/index.html</p>
+                <h3>Feature</h3>
+                <p>『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
+                <p>SEO対策も施しているため、仮のサイトでありながらGoogleでの検索順位は上位となっています。</p>
+                <h3>trouble point</h3>
+                <p>texttexttext</p>
+              </a>
             </div>
             <div>
               <h3>環境開発株式会社</h3>
