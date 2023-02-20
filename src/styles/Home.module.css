@@ -22,23 +22,24 @@
   margin: 20px auto;
 }
 
-@media screen and (max-width:500px){
-  .url_p a{
-
-    font-size: 75%;
-  }
-}
-
 .wrapper div{
   width: min(90%,500px);
+  padding: 5px;
   margin: 5px auto;
   background-color: aliceblue;
   border: solid 1px black;
 }
 
 .url_p {
-  font-size: 80%;
+  font-size: 90%;
 }
+
+@media screen and (max-width:600px){
+  .url_p{
+    font-size: 65%;
+  }
+}
+
 
 .footer{
   width: 100%;
