@@ -44,6 +44,11 @@
   }
 }
 
+.sanpatuya{
+  height: 500px;
+  background-image: url(../../public/img/sanpatuya.png);
+  background-size: cover;
+}
 
 .footer{
   width: 100%;
