@@ -31,21 +31,21 @@ export default function Home() {
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
             <div>
-              <h3>site name</h3>
+              <h3>ザ・サンパツヤ</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
-              <h3>site name</h3>
+              <h3>環境開発株式会社</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
-              <h3>site name</h3>
+              <h3>瀬戸珈琲</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
@@ -68,28 +68,28 @@ export default function Home() {
           <h2>Applications</h2>
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
             <div>
-              <h3>site name</h3>
+              <h3>ToDoアプリ</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
-              <h3>site name</h3>
+              <h3>じゃんけん</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
-              <h3>site name</h3>
+              <h3>スロット</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
-              <h3>site name</h3>
+              <h3>仕事効率化</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
@@ -105,28 +105,28 @@ export default function Home() {
           <h2>Practices</h2>
           <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
             <div>
-              <h3>site name</h3>
+              <h3>Swiper</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
-              <h3>site name</h3>
+              <h3>流れる文字</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
-              <h3>site name</h3>
+              <h3>自由に移動</h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
             <div>
-              <h3>site name</h3>
+              <h3></h3>
               <h3>feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
