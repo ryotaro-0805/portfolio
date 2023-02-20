@@ -18,6 +18,12 @@ export default function Home() {
         <h1 className={styles.title}>Title</h1>
       </header>
       <main className={styles.main}>
+        <div className={styles.skill_wrapper}>
+          <h3>Skill</h3>
+          <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
+          <p>Firebase,Firestore,Git,GitHub,Vercel</p>
+          <p>Photoshop,illustrator,XD,Premiere Pro</p>
+        </div>
         {/* 
         websites
          */}
