@@ -46,12 +46,13 @@
 
 .sanpatuya{
   height: 500px;
-  background-image: url(../../public/img/sanpatuya.png);
+  background-image: url(../../public/img/sanpatuya.jpg);
   background-size: cover;
+
 }
 
 .footer{
   width: 100%;
   text-align: center;
-  background-color: rgb(216, 230, 241);
+  background-color: rgb(234, 216, 241);
 }

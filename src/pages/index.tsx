@@ -30,7 +30,7 @@ export default function Home() {
         <div className={`${styles.container} ${styles.websites_container}`}>
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
-            <div>
+            <div className={styles.sanpatuya}>
               <a href="https://xs622417.xsrv.jp/homepage_test/index.html">
                 <h3>ザ・サンパツヤ</h3>
                 <p className={styles.url_p}>url : https://xs622417.xsrv.jp/homepage_test/index.html</p>
