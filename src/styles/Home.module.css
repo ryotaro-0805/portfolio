@@ -44,6 +44,12 @@
   }
 }
 
+.websites_wrapper p,.websites_wrapper h3{
+  color: #fff;
+  background-color: rgba(0, 0, 0,.3);
+  border-radius: 5px;
+}
+
 .sanpatuya{
   height: 500px;
   background-image: url(../../public/img/sanpatuya.jpg);

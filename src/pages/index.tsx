@@ -34,6 +34,7 @@ export default function Home() {
               <a href="https://xs622417.xsrv.jp/homepage_test/index.html">
                 <h3>ザ・サンパツヤ</h3>
                 <p className={styles.url_p}>url : https://xs622417.xsrv.jp/homepage_test/index.html</p>
+                <p className={styles.code_p}>コード : https://github.com/ryotaro-0805/homepage-kankyokaihatu</p>
                 <h3>Feature</h3>
                 <p>『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
                 <p>SEO対策も施しているため、仮のサイトでありながらGoogleでの検索順位は上位となっています。</p>
