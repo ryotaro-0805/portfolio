@@ -31,16 +31,20 @@ export default function Home() {
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
             <div className={styles.sanpatuya}>
+
               <a href="https://xs622417.xsrv.jp/homepage_test/index.html">
+              <table>              </table>
                 <h3>ザ・サンパツヤ</h3>
-                <p className={styles.url_p}>url : https://xs622417.xsrv.jp/homepage_test/index.html</p>
-                <p className={styles.code_p}>コード : https://github.com/ryotaro-0805/homepage-kankyokaihatu</p>
-                <h3>Feature</h3>
-                <p>『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
-                <p>SEO対策も施しているため、仮のサイトでありながらGoogleでの検索順位は上位となっています。</p>
-                <h3>trouble point</h3>
-                <p>texttexttext</p>
+                <p className={styles.url_p}>url: https://xs622417.xsrv.jp/homepage_test/index.html</p>
               </a>
+              <hr />
+              <a href="https://github.com/ryotaro-0805/homepage-kankyokaihatu">
+              <p className={styles.code_p}>code: https://github.com/ryotaro-0805/homepage-kankyokaihatu</p>
+              </a>
+              <hr />
+              <h3>Feature</h3>
+              <p>『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
+              <p>SEO対策も施しているため、架空のショップサイトですがGoogleでの検索順位は上位となっています。</p>
             </div>
             <div>
               <h3>環境開発株式会社</h3>

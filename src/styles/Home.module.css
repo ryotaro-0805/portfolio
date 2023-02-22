@@ -28,26 +28,28 @@
 
 .wrapper div{
   width: min(95%,500px);
-  padding: 5px;
   margin: 5px auto;
   background-color: aliceblue;
   border: solid 1px black;
 }
 
-.url_p {
-  font-size: 100%;
+.url_p , .code_p{
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width:600px){
-  .url_p{
+  .url_p , .code_p{
     font-size: 90%;
   }
 }
 
-.websites_wrapper p,.websites_wrapper h3{
+.websites_wrapper p,.websites_wrapper h3 {
+  padding: 5px;
   color: #fff;
-  background-color: rgba(0, 0, 0,.3);
-  border-radius: 5px;
+  text-shadow: black 2px 2px 2px;
+  background-color: rgba(0, 0, 0,.4);
 }
 
 .sanpatuya{
