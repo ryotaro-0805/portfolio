@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <h1 className={styles.title}>Title</h1>
+        <h1 className={styles.title}>～Ryotaro's Portfolio～</h1>
       </header>
       <main className={styles.main}>
         <div className={styles.skill_wrapper}>
