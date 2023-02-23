@@ -5,13 +5,14 @@
 }
 
 .skill_wrapper{
-  width: min(80%,1200px);
+  width: 400px;
   min-width: 350px;
-  margin: 20px auto;  
+  margin: 20px auto;
+  font-size: 100%;
 }
 
 .container{
-  background: linear-gradient(135deg,rgb(229, 229, 233),rgb(135, 132, 132));
+  background: linear-gradient(135deg,rgb(229, 229, 233),rgb(234, 216, 229));
   width: min(100%,1200px);
   min-width: 350px;
   margin: 0 auto;
@@ -19,7 +20,7 @@
 }
 
 .container h2{
-  margin-left: 10px;
+  text-align: center;;
 }
 
 .wrapper{
@@ -56,8 +57,9 @@
 
 .sanpatuya{
   height: 500px;
-  background-image: url(../../public/img/sanpatuya.jpg);
+  background-image: url(../../public/img/sanpatuya.png);
   background-size: cover;
+  background-position: 50% 50%;
 
 }
 
