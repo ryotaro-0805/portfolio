@@ -1,11 +1,48 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import React, { useRef, useCallback, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { transform } from 'typescript';
 
-const inter = Inter({ subsets: ['latin'] })
+export default function Home(props: any) {
 
-export default function Home() {
+
+  const targets = useRef([]);
+
+  const addToTargets = (el) => {
+    if (el && !targets.current?.includes(el)) {
+      targets.current.push(el)
+      console.log(el);
+      
+    }
+  }
+  // const {ref:inViewRef,inView}=useInView();
+  // const setRefs=useCallback((node:any)=>{
+  //     ref.current=node;
+  //     inViewRef(node)
+  //     console.log(node,inView);
+  //   },[inViewRef],
+  // );
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // document.getElementsByTagName('body').style.opacity=1;
+          entry.target.style.opacity=1;
+          entry.target.style.transform='scale(1)';
+          console.log(
+            entry.target
+          );
+          // console.log(entry.target.classList);
+        }
+      });
+    });
+    targets.current.forEach((target) => {
+      observer.observe(target);
+    });
+  }, [targets]);
+
   return (
     <>
       <Head>
@@ -30,37 +67,45 @@ export default function Home() {
         <div className={`${styles.container} ${styles.websites_container}`}>
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
-            <div className={styles.sanpatuya}>
 
-              <a href="https://xs622417.xsrv.jp/homepage_test/index.html">
-              <table>              </table>
+            <div ref={addToTargets} className={styles.sanpatuya}>
+              <a href="https://xs622417.xsrv.jp/homepage_test/index.html" target='_blank'>
                 <h3>ザ・サンパツヤ</h3>
                 <p className={styles.url_p}>url: https://xs622417.xsrv.jp/homepage_test/index.html</p>
               </a>
               <hr />
-              <a href="https://github.com/ryotaro-0805/homepage-kankyokaihatu">
-              <p className={styles.code_p}>code: https://github.com/ryotaro-0805/homepage-kankyokaihatu</p>
+              <a href="https://github.com/ryotaro-0805/homepage-kankyokaihatu" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/homepage-kankyokaihatu</p>
               </a>
               <hr />
-              <h3>Feature</h3>
+              <h3>Feature / 特徴</h3>
               <p>『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
               <p>SEO対策も施しているため、架空のショップサイトですがGoogleでの検索順位は上位となっています。</p>
             </div>
-            <div>
-              <h3>環境開発株式会社</h3>
-              <h3>Feature</h3>
-              <p>texttexttext</p>
-              <h3>trouble point</h3>
-              <p>texttexttext</p>
+
+            <div ref={addToTargets} className={styles.kankyo}>
+              <a href="https://homepage-kankyokaihatu.vercel.app" target='_blank'>
+                <h3>環境開発株式会社</h3>
+                <p className={styles.url_p}>url: https://homepage-kankyokaihatu.vercel.app/</p>
+              </a>
+              <hr />
+              <a href="https://github.com/ryotaro-0805/homepage-kankyokaihatu" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/homepage-kankyokaihatu</p>
+              </a>
+              <hr />
+              <h3>Feature / 特徴</h3>
+              <p>『環境』、『ビジネス』をテーマにNext.jsで作成しております。</p>
+              <p></p>
             </div>
-            <div>
+
+            <div ref={addToTargets} className={styles.seto}>
               <h3>瀬戸珈琲</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-            <div>
+            <div ref={addToTargets} className={styles.site}>
               <h3>site name</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
