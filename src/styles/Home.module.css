@@ -1,19 +1,21 @@
 .title{
-  width: min(95%,1200px);
+  width: min(90%,1200px);
   margin: 0 auto;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .skill_wrapper{
   width: 400px;
   min-width: 350px;
   margin: 20px auto;
-  font-size: 100%;
+  padding-left: 10px;
+  font-size: 80%;
 }
 
 .container{
   background: linear-gradient(135deg,rgb(229, 229, 233),rgb(234, 216, 229));
-  width: min(100%,1200px);
+  width: min(95%,1200px);
   min-width: 350px;
   margin: 0 auto;
   box-shadow: 5px 5px 5px black,  -2px -2px 10px rgb(236, 188, 238);
@@ -44,7 +46,7 @@
 
 @media screen and (max-width:600px){
   .url_p , .code_p{
-    font-size: 90%;
+    font-size: 70%;
   }
 }
 

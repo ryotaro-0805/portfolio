@@ -19,3 +19,8 @@ a{
 a:hover{
     opacity: .8;
 }
+
+main{
+    width: 100vw;
+    overflow: hidden;
+}
