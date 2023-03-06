@@ -9,7 +9,7 @@ export default function Home(props: any) {
 
   const targets = useRef([]);
 
-  const addToTargets = (el) => {
+  const addToTargets = (el:never) => {
     if (el && !targets.current?.includes(el)) {
       targets.current.push(el)
       console.log(el);
@@ -26,7 +26,7 @@ export default function Home(props: any) {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+      entries.forEach((entry:any) => {
         if (entry.isIntersecting) {
           // document.getElementsByTagName('body').style.opacity=1;
           entry.target.style.opacity=1;
