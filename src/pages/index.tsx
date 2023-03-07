@@ -1,18 +1,18 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import React, { useRef,  useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 export default function Home() {
 
   // inntersection observer start
-  const targets = useRef([]); 
+  const targets = useRef([]);
   const addToTargets = (el: never) => {
     if (el && !targets.current?.includes(el)) {
       targets.current.push(el)
     }
   }
   const options = {
-    threshold: .2
+    threshold: .1
   }
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -41,7 +41,7 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <div ref={addToTargets} className={`${styles.skill_wrapper} ${styles.appear}`}>
-          <h3>Skill</h3>
+          <h3>Skills</h3>
           <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
           <p>Firebase,Firestore,Git,GitHub,Vercel</p>
           <p>Photoshop,illustrator,XD,Premiere Pro</p>
@@ -106,28 +106,28 @@ export default function Home() {
         <div ref={addToTargets} className={`${styles.container} ${styles.applications_container} ${styles.appear}`}>
           <h2>Applications</h2>
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
-            <div>
+            <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>ToDoアプリ</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-            <div>
+            <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>じゃんけん</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-            <div>
+            <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>スロット</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-            <div>
+            <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>仕事効率化</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
@@ -143,29 +143,29 @@ export default function Home() {
         <div ref={addToTargets} className={`${styles.container} ${styles.practices_container} ${styles.appear}`}>
           <h2>Practices</h2>
           <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
-            <div>
+            <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>Swiper</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-            <div>
+            <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>流れる文字</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-            <div>
+            <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>自由に移動</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-            <div>
-              <h3></h3>
+            <div ref={addToTargets} className={`${styles.appear}`}>
+              <h3>useful App</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>

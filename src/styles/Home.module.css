@@ -1,10 +1,13 @@
 /*intersection observer */
 .appear{
   opacity: 0;
+  transform: translateX(-5%) scale(.9);
+  transition: 1s;
 }
 
 .appear.active{
   opacity: 1;
+  transform: translateX(0) scale(1);
 }
 
 /* intersection observer end*/
@@ -12,6 +15,7 @@
 .title{
   width: min(90%,1200px);
   margin: 0 auto;
+  margin-top: 10px;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -72,8 +76,6 @@
   height: 500px;
   background-size: cover;
   background-position: 50% 50%;
-  opacity: 0;
-  transform: scale(.95);
 }
 
 .sanpatuya{
@@ -86,14 +88,8 @@
 
 .footer{
   width: 100%;
+  color: #fff;
+  text-shadow: #000 3px 3px 3px;
   text-align: center;
-  background-color: rgb(234, 216, 241);
-}
-
-.test{
-  color:blue;
-}
-
-.test.active{
-  color: red;
+  background:linear-gradient(160deg ,purple,violet);
 }
