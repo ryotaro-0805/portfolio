@@ -19,10 +19,6 @@ export default function Home() {
       entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
           entry.target.classList.add(styles.active);
-          entry.target.classList.add('test');
-          entry.target.style.opacity = 1;
-          entry.target.style.transform = 'scale(1)';
-          console.log(entry.target);
         }
       });
     }, options);
@@ -53,10 +49,9 @@ export default function Home() {
         {/* 
         websites
          */}
-        <div className={`${styles.container} ${styles.websites_container}`}>
+        <div ref={addToTargets} className={`${styles.container} ${styles.websites_container} ${styles.appear}`}>
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
-
             <div ref={addToTargets} className={`${styles.sanpatuya} ${styles.appear}`}>
               <a href="https://xs622417.xsrv.jp/homepage_test/index.html" target='_blank'>
                 <h3>ザ・サンパツヤ</h3>
