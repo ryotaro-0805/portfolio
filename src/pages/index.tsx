@@ -1,47 +1,36 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import React, { useRef, useCallback, useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { transform } from 'typescript';
+import React, { useRef,  useEffect } from 'react';
 
-export default function Home(props: any) {
+export default function Home() {
 
-
-  const targets = useRef([]);
-
-  const addToTargets = (el:never) => {
+  // inntersection observer start
+  const targets = useRef([]); 
+  const addToTargets = (el: never) => {
     if (el && !targets.current?.includes(el)) {
       targets.current.push(el)
-      console.log(el);
-      
     }
   }
-  // const {ref:inViewRef,inView}=useInView();
-  // const setRefs=useCallback((node:any)=>{
-  //     ref.current=node;
-  //     inViewRef(node)
-  //     console.log(node,inView);
-  //   },[inViewRef],
-  // );
-
+  const options = {
+    threshold: .2
+  }
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry:any) => {
+      entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
-          // document.getElementsByTagName('body').style.opacity=1;
-          entry.target.style.opacity=1;
-          entry.target.style.transform='scale(1)';
-          console.log(
-            entry.target
-          );
-          // console.log(entry.target.classList);
+          entry.target.classList.add(styles.active);
+          entry.target.classList.add('test');
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'scale(1)';
+          console.log(entry.target);
         }
       });
-    });
+    }, options);
     targets.current.forEach((target) => {
       observer.observe(target);
     });
   }, [targets]);
+  // inntersection observer end
 
   return (
     <>
@@ -52,10 +41,10 @@ export default function Home(props: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <h1 className={styles.title}>～Ryotaro's Portfolio～</h1>
+        <h1 ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
       </header>
       <main className={styles.main}>
-        <div className={styles.skill_wrapper}>
+        <div ref={addToTargets} className={`${styles.skill_wrapper} ${styles.appear}`}>
           <h3>Skill</h3>
           <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
           <p>Firebase,Firestore,Git,GitHub,Vercel</p>
@@ -68,7 +57,7 @@ export default function Home(props: any) {
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
 
-            <div ref={addToTargets} className={styles.sanpatuya}>
+            <div ref={addToTargets} className={`${styles.sanpatuya} ${styles.appear}`}>
               <a href="https://xs622417.xsrv.jp/homepage_test/index.html" target='_blank'>
                 <h3>ザ・サンパツヤ</h3>
                 <p className={styles.url_p}>url: https://xs622417.xsrv.jp/homepage_test/index.html</p>
@@ -83,7 +72,7 @@ export default function Home(props: any) {
               <p>SEO対策も施しているため、架空のショップサイトですがGoogleでの検索順位は上位となっています。</p>
             </div>
 
-            <div ref={addToTargets} className={styles.kankyo}>
+            <div ref={addToTargets} className={`${styles.kankyo} ${styles.appear}`}>
               <a href="https://homepage-kankyokaihatu.vercel.app" target='_blank'>
                 <h3>環境開発株式会社</h3>
                 <p className={styles.url_p}>url: https://homepage-kankyokaihatu.vercel.app/</p>
@@ -98,14 +87,15 @@ export default function Home(props: any) {
               <p></p>
             </div>
 
-            <div ref={addToTargets} className={styles.seto}>
+            <div ref={addToTargets} className={`${styles.seto} ${styles.appear}`}>
               <h3>瀬戸珈琲</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-            <div ref={addToTargets} className={styles.site}>
+
+            <div ref={addToTargets} className={`${styles.site} ${styles.appear}`}>
               <h3>site name</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
@@ -118,7 +108,7 @@ export default function Home(props: any) {
         {/* 
         applications
          */}
-        <div className={`${styles.container} ${styles.applications_container}`}>
+        <div ref={addToTargets} className={`${styles.container} ${styles.applications_container} ${styles.appear}`}>
           <h2>Applications</h2>
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
             <div>
@@ -155,7 +145,7 @@ export default function Home(props: any) {
         {/* 
         practice
          */}
-        <div className={`${styles.container} ${styles.practices_container}`}>
+        <div ref={addToTargets} className={`${styles.container} ${styles.practices_container} ${styles.appear}`}>
           <h2>Practices</h2>
           <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
             <div>
