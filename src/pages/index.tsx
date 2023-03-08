@@ -86,7 +86,7 @@ export default function Home() {
         {/* 
         websites
       */}
-        <div ref={addToTargets} className={`${styles.container} ${styles.websites_container} ${styles.appear}`}>
+        <div className={`${styles.container} ${styles.websites_container}`}>
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
             <div ref={addToTargets} className={`${styles.sanpatuya} ${styles.appear}`}>
