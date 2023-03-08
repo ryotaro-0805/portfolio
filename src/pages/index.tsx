@@ -61,26 +61,24 @@ export default function Home() {
             <SwiperSlide>
               <div className={`${styles.skill_wrapper}`}>
                 <h3>Skills</h3>
-                <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
-                <p>Firebase,Firestore,Git,GitHub,Vercel</p>
-                <p>Photoshop,illustrator,XD,Premiere Pro</p>
+                <p>HTML, CSS, JavaScript, React, Next.js, WordPress, PHP, SQL</p>
+                <p>Firebase, Firestore, Git, GitHub, Vercel</p>
+                <p>Photoshop, illustrator, XD, Premiere Pro</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={`${styles.skill_wrapper}`}>
                 <h3>About Me</h3>
-                <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
-                <p>Firebase,Firestore,Git,GitHub,Vercel</p>
-                <p>Photoshop,illustrator,XD,Premiere Pro</p>
-              </div>
+                <p>HTML, CSS, JavaScript, React, Next.js, WordPress, PHP, SQL</p>
+                <p>Firebase, Firestore, Git, GitHub, Vercel</p>
+                <p>Photoshop, illustrator, XD, Premiere Pro</p>              </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={`${styles.skill_wrapper}`}>
                 <h3>Dream</h3>
-                <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
-                <p>Firebase,Firestore,Git,GitHub,Vercel</p>
-                <p>Photoshop,illustrator,XD,Premiere Pro</p>
-              </div>
+                <p>HTML, CSS, JavaScript, React, Next.js, WordPress, PHP, SQL</p>
+                <p>Firebase, Firestore, Git, GitHub, Vercel</p>
+                <p>Photoshop, illustrator, XD, Premiere Pro</p>              </div>
             </SwiperSlide>
           </Swiper>
 
