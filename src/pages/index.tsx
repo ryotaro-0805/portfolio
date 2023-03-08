@@ -1,6 +1,12 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import React, { useRef, useEffect } from 'react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 export default function Home() {
 
@@ -12,7 +18,7 @@ export default function Home() {
     }
   }
   const options = {
-    threshold: .1
+    threshold: .2
   }
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -40,15 +46,48 @@ export default function Home() {
         <h1 ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
       </header>
       <main className={styles.main}>
-        <div ref={addToTargets} className={`${styles.skill_wrapper} ${styles.appear}`}>
-          <h3>Skills</h3>
-          <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
-          <p>Firebase,Firestore,Git,GitHub,Vercel</p>
-          <p>Photoshop,illustrator,XD,Premiere Pro</p>
+        <div ref={addToTargets} className={`${styles.appear}`}>
+          <Swiper
+            //autoplay={{"delay": 1000}} 追記 
+            autoplay={{ "delay": 1000 }}
+            // デフォルト＋Autoplay, EffectFade追記
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            navigation
+            // speed追記
+            speed={2000}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+          >
+            <SwiperSlide>
+              <div className={`${styles.skill_wrapper}`}>
+                <h3>Skills</h3>
+                <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
+                <p>Firebase,Firestore,Git,GitHub,Vercel</p>
+                <p>Photoshop,illustrator,XD,Premiere Pro</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={`${styles.skill_wrapper}`}>
+                <h3>About Me</h3>
+                <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
+                <p>Firebase,Firestore,Git,GitHub,Vercel</p>
+                <p>Photoshop,illustrator,XD,Premiere Pro</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={`${styles.skill_wrapper}`}>
+                <h3>Dream</h3>
+                <p>HTML,CSS,JavaScript,React,Next.js,WordPress,PHP,SQL</p>
+                <p>Firebase,Firestore,Git,GitHub,Vercel</p>
+                <p>Photoshop,illustrator,XD,Premiere Pro</p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+
         </div>
         {/* 
         websites
-         */}
+      */}
         <div ref={addToTargets} className={`${styles.container} ${styles.websites_container} ${styles.appear}`}>
           <h2>Websites</h2>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
