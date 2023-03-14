@@ -85,7 +85,7 @@ intersection observer end
 
 .main_menu_wrapper.active2{
   background-color: aliceblue;
-  width: 1000px;
+  width: 800%;
   padding: 10px;
   position: fixed;
   top: 0;
@@ -96,7 +96,7 @@ intersection observer end
 }
 
 .main_menu{
-  padding: 5px;
+  padding: 5px 20px;
   background: linear-gradient(90deg ,#000,#c5c5c5);
   color: #fff;
   text-shadow: black 1px 1px 1px;
@@ -127,7 +127,7 @@ intersection observer end
 .skill_wrapper{
   max-width: 800px;
   padding: 0px;
-  padding-left: 40px;
+  padding: 0 40px;
   min-width: 350px;
   margin: 50px auto;
   font-size: min(3vw,20px);
