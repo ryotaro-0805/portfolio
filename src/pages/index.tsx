@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 export default function Home() {
-
   // inntersection observer start
   const targets = useRef([]);
   const addToTargets = (el: never) => {
@@ -34,6 +33,27 @@ export default function Home() {
   }, [targets]);
   // inntersection observer end
 
+  // 上スクロールバー出現
+  const [myCss,setMyCss]=useState(styles.arrow);
+  const [distance, setDistance]=useState(0);
+  useEffect(()=>{
+    addEventListener('scroll',(e)=>{
+      setDistance(window.scrollY);
+    });
+    if (distance>500){
+      setMyCss(`${styles. arrow} ${styles.active}`)
+    } else{
+      setMyCss(`${styles. arrow}`)
+    }
+  },[distance]); 
+    
+  // console.log(window.pageYOffset);
+  
+  // 移動量をとる
+  // 一定量移動したら上スクロールボタンにクラスを付与
+
+  // 上スクロールバー出現　end
+
   return (
     <>
       <Head>
@@ -43,8 +63,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       </Head>
+      
+      <span className={`${myCss} material-symbols-outlined`}>
+      <a className={styles.arrow_a} href="#top">
+        arrow_circle_up
+      </a>
+        </span> {/* 上へのアイコン */}
       <header>
-        <h1 ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
+        <h1 id='top' ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
       </header>
       <main className={styles.main}>
         <div ref={addToTargets} className={`${styles.appear}`}>
@@ -74,8 +100,8 @@ export default function Home() {
                 <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   select_check_box
                 </span>About Me</h3>
-                <p>プロフィール</p>
-                <p>受注可能な作業内容</p>
+                <p>～プロフィール～</p>
+                <p>＜受注可能な作業内容＞</p>
                 <p>ホームページ作成：モダンな言語で高速かつSEOに強いホームページを作成します。</p>
                 <p>システム構築：お問い合わせシステム、入力データの保存、データベースアクセス等のシステム構築が可能です。</p>
                 <p>稼働時間</p>
@@ -99,7 +125,7 @@ export default function Home() {
       */}
         <div className={`${styles.container}`}>
           <h2>Websites</h2>
-          <p>私が作成した、ウェブサイトの紹介です。</p>
+          <p className={styles.comment}>私が作成した、ウェブサイトの紹介です。</p>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
             {/* 
             ザ・サンパツヤ
@@ -163,7 +189,7 @@ export default function Home() {
          */}
         <div ref={addToTargets} className={`${styles.container} ${styles.applications_container} ${styles.appear}`}>
           <h2>Applications</h2>
-          <p>私が作成した、ウェブアプリです。</p>
+          <p className={styles.comment}>私が作成した、ウェブアプリです。</p>
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
             {/* 
             ToDoアプリ
@@ -243,7 +269,7 @@ export default function Home() {
          */}
         <div ref={addToTargets} className={`${styles.container} ${styles.practices_container} ${styles.appear}`}>
           <h2>Practices</h2>
-          <p>今までにコーディングの練習として作成したものを紹介しております。</p>
+          <p className={styles.comment}>今までにコーディングの練習として作成したものを紹介しております。</p>
           <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
             <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>Swiper</h3>
