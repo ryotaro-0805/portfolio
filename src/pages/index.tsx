@@ -61,7 +61,7 @@ export default function Home() {
           >
             <SwiperSlide>
               <div className={`${styles.skill_wrapper}`}>
-                <h3><span style={{marginRight:'5px',verticalAlign:'-5px'}} className="material-symbols-outlined">
+                <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   star
                 </span>Skills</h3>
                 <p>HTML, CSS, JavaScript, React, Next.js, WordPress, PHP, SQL</p>
@@ -71,17 +71,19 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={`${styles.skill_wrapper}`}>
-                <h3><span style={{marginRight:'5px',verticalAlign:'-5px'}} className="material-symbols-outlined">
+                <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   select_check_box
                 </span>About Me</h3>
                 <p>プロフィール</p>
                 <p>受注可能な作業内容</p>
+                <p>ホームページ作成：モダンな言語で高速かつSEOに強いホームページを作成します。</p>
+                <p>システム構築：お問い合わせシステム、入力データの保存、データベースアクセス等のシステム構築が可能です。</p>
                 <p>稼働時間</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={`${styles.skill_wrapper}`}>
-                <h3><span style={{marginRight:'5px',verticalAlign:'-5px'}} className="material-symbols-outlined">
+                <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   arrow_outward
                 </span>Objective</h3>
                 <p>モダンな言語、堅牢なシステム、型崩れしない表示を目指してコーディングを行います。</p>
@@ -97,7 +99,10 @@ export default function Home() {
       */}
         <div className={`${styles.container} ${styles.websites_container}`}>
           <h2>Websites</h2>
+          <p>私が作成した、ウェブサイトの紹介です。</p>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
+
+
             <div ref={addToTargets} className={`${styles.sanpatuya} ${styles.appear}`}>
               <a href="https://xs622417.xsrv.jp/homepage_test/index.html" target='_blank'>
                 <h3>ザ・サンパツヤ</h3>
@@ -151,34 +156,75 @@ export default function Home() {
          */}
         <div ref={addToTargets} className={`${styles.container} ${styles.applications_container} ${styles.appear}`}>
           <h2>Applications</h2>
+            <p>私が作成した、ウェブアプリです。</p>
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
+            {/* 
+            ToDoアプリ
+             */}
             <div ref={addToTargets} className={`${styles.appear}`}>
-              <h3>ToDoアプリ</h3>
-              <h3>Feature</h3>
-              <p>texttexttext</p>
-              <h3>trouble point</h3>
-              <p>texttexttext</p>
+              <a href="https://firebase-connection.vercel.app/" target='_blank'>
+                <h3>ToDoアプリ</h3>
+                <p className={styles.url_p}>url: https://firebase-connection.vercel.app/</p>
+              </a>
+              <hr />
+              <a href="https://github.com/ryotaro-0805/todo-App-using-firebase" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/todo-App-using-firebase</p>
+              </a>
+              <hr />
+              <h3>Feature / 特徴</h3>
+              <p>Firebase-Firestoreを使用しているので、入力したToDoを永続的に保存、出力することができます。</p>
+              <p>予定の入力、完了、編集、削除機能を有していますので、ToDoアプリとしての本格的な使用も可能です。</p>
             </div>
+            {/* 
+              じゃんけん
+             */}
             <div ref={addToTargets} className={`${styles.appear}`}>
-              <h3>じゃんけん</h3>
-              <h3>Feature</h3>
-              <p>texttexttext</p>
-              <h3>trouble point</h3>
-              <p>texttexttext</p>
+              <a href="https://firebase-connection.vercel.app/" target='_blank'>
+                <h3>アプリ名</h3>
+                <p className={styles.url_p}>url: https://firebase-connection.vercel.app/</p>
+              </a>
+              <hr />
+              <a href="https://github.com/ryotaro-0805/todo-App-using-firebase" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/todo-App-using-firebase</p>
+              </a>
+              <hr />
+              <h3>Feature / 特徴</h3>
+              <p>ここに特徴が入ります。</p>
+              <p>ここに特徴が入ります。</p>
             </div>
+            {/* 
+             　スロット
+             */}
             <div ref={addToTargets} className={`${styles.appear}`}>
-              <h3>スロット</h3>
-              <h3>Feature</h3>
-              <p>texttexttext</p>
-              <h3>trouble point</h3>
-              <p>texttexttext</p>
+              <a href="https://firebase-connection.vercel.app/" target='_blank'>
+                <h3>アプリ名</h3>
+                <p className={styles.url_p}>url: https://firebase-connection.vercel.app/</p>
+              </a>
+              <hr />
+              <a href="https://github.com/ryotaro-0805/todo-App-using-firebase" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/todo-App-using-firebase</p>
+              </a>
+              <hr />
+              <h3>Feature / 特徴</h3>
+              <p>ここに特徴が入ります。</p>
+              <p>ここに特徴が入ります。</p>
             </div>
+            {/* 
+              仕事効率化
+             */}
             <div ref={addToTargets} className={`${styles.appear}`}>
-              <h3>仕事効率化</h3>
-              <h3>Feature</h3>
-              <p>texttexttext</p>
-              <h3>trouble point</h3>
-              <p>texttexttext</p>
+              <a href="https://firebase-connection.vercel.app/" target='_blank'>
+                <h3>アプリ名</h3>
+                <p className={styles.url_p}>url: https://firebase-connection.vercel.app/</p>
+              </a>
+              <hr />
+              <a href="https://github.com/ryotaro-0805/todo-App-using-firebase" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/todo-App-using-firebase</p>
+              </a>
+              <hr />
+              <h3>Feature / 特徴</h3>
+              <p>ここに特徴が入ります。</p>
+              <p>ここに特徴が入ります。</p>
             </div>
           </div>
         </div>
@@ -188,6 +234,7 @@ export default function Home() {
          */}
         <div ref={addToTargets} className={`${styles.container} ${styles.practices_container} ${styles.appear}`}>
           <h2>Practices</h2>
+          <p>今までにコーディングの練習として作成したものを紹介しております。</p>
           <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
             <div ref={addToTargets} className={`${styles.appear}`}>
               <h3>Swiper</h3>
@@ -222,9 +269,9 @@ export default function Home() {
       </main>
       <footer className={styles.footer}>
         <h3>
-        <span style={{marginRight:'5px',verticalAlign:'-5px'}} className="material-symbols-outlined">
-potted_plant
-</span>This page is created by Ryotaro
+          <span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
+            potted_plant
+          </span>This page is created by Ryotaro
         </h3>
       </footer>
     </>
