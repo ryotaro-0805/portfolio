@@ -97,12 +97,13 @@ export default function Home() {
         {/* 
         websites
       */}
-        <div className={`${styles.container} ${styles.websites_container}`}>
+        <div className={`${styles.container}`}>
           <h2>Websites</h2>
           <p>私が作成した、ウェブサイトの紹介です。</p>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
-
-
+            {/* 
+            ザ・サンパツヤ
+             */}
             <div ref={addToTargets} className={`${styles.sanpatuya} ${styles.appear}`}>
               <a href="https://xs622417.xsrv.jp/homepage_test/index.html" target='_blank'>
                 <h3>ザ・サンパツヤ</h3>
@@ -117,7 +118,9 @@ export default function Home() {
               <p>『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
               <p>SEO対策も施しているため、架空のショップサイトですが検索エンジンでの順位は上位となっています。</p>
             </div>
-
+            {/* 
+            環境開発株式会社
+             */}
             <div ref={addToTargets} className={`${styles.kankyo} ${styles.appear}`}>
               <a href="https://homepage-kankyokaihatu.vercel.app" target='_blank'>
                 <h3>環境開発株式会社</h3>
@@ -132,7 +135,9 @@ export default function Home() {
               <p>『環境』、『ビジネス』をテーマにNext.jsで作成しております。</p>
               <p></p>
             </div>
-
+            {/* 
+            瀬戸珈琲
+             */}
             <div ref={addToTargets} className={`${styles.seto} ${styles.appear}`}>
               <h3>瀬戸珈琲</h3>
               <h3>Feature</h3>
@@ -140,7 +145,9 @@ export default function Home() {
               <h3>trouble point</h3>
               <p>texttexttext</p>
             </div>
-
+            {/* 
+            ホームページ
+             */}
             <div ref={addToTargets} className={`${styles.site} ${styles.appear}`}>
               <h3>site name</h3>
               <h3>Feature</h3>
@@ -156,7 +163,7 @@ export default function Home() {
          */}
         <div ref={addToTargets} className={`${styles.container} ${styles.applications_container} ${styles.appear}`}>
           <h2>Applications</h2>
-            <p>私が作成した、ウェブアプリです。</p>
+          <p>私が作成した、ウェブアプリです。</p>
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
             {/* 
             ToDoアプリ
@@ -179,35 +186,37 @@ export default function Home() {
               じゃんけん
              */}
             <div ref={addToTargets} className={`${styles.appear}`}>
-              <a href="https://firebase-connection.vercel.app/" target='_blank'>
-                <h3>アプリ名</h3>
-                <p className={styles.url_p}>url: https://firebase-connection.vercel.app/</p>
+              <a href="https://rock-app.vercel.app/" target='_blank'>
+                <h3>じゃんけん</h3>
+                <p className={styles.url_p}>url: https://rock-app.vercel.app/</p>
               </a>
               <hr />
-              <a href="https://github.com/ryotaro-0805/todo-App-using-firebase" target='_blank'>
-                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/todo-App-using-firebase</p>
+              <a href="https://github.com/ryotaro-0805/rock-paper-scissors-App" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/rock-paper-scissors-App</p>
               </a>
               <hr />
               <h3>Feature / 特徴</h3>
-              <p>ここに特徴が入ります。</p>
-              <p>ここに特徴が入ります。</p>
+              <p>定番のじゃんけんアプリです。</p>
+              <p>デザインにもこだわり制作しました。</p>
+              <p>5回連続で勝利するとエンディングというゲーム性も確保しております。</p>
             </div>
             {/* 
              　スロット
              */}
             <div ref={addToTargets} className={`${styles.appear}`}>
-              <a href="https://firebase-connection.vercel.app/" target='_blank'>
-                <h3>アプリ名</h3>
-                <p className={styles.url_p}>url: https://firebase-connection.vercel.app/</p>
+              <a href="https://fighting-app.vercel.app/" target='_blank'>
+                <h3>スロット</h3>
+                <p className={styles.url_p}>url: https://fighting-app.vercel.app/</p>
               </a>
               <hr />
-              <a href="https://github.com/ryotaro-0805/todo-App-using-firebase" target='_blank'>
-                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/todo-App-using-firebase</p>
+              <a href="https://github.com/ryotaro-0805/slot-App" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/slot-App</p>
               </a>
               <hr />
               <h3>Feature / 特徴</h3>
-              <p>ここに特徴が入ります。</p>
-              <p>ここに特徴が入ります。</p>
+              <p>Reactで制作したスロットゲームの基礎部分です。</p>
+              <p>3つの数字の当たり判定と処理までをコーディングしています。</p>
+              <p>今後はグラフィック、サウンド、コインの増減等を追加して、ゲーム性を拡充していく予定です。</p>
             </div>
             {/* 
               仕事効率化

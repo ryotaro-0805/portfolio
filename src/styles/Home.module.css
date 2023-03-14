@@ -1,4 +1,6 @@
-/*intersection observer */
+/*
+intersection observer 
+*/
 .appear{
   opacity: 0;
   transform: translateX(-5%) scale(.9);
@@ -10,26 +12,16 @@
   transform: translateX(0) scale(1);
 }
 
-/* intersection observer end*/
+/* 
+intersection observer end
+*/
 
-.title{
-  width: min(90%,1200px);
-  margin: 0 auto;
-  margin-top: 10px;
-  color: rgb(81, 37, 240);
-  text-align: center;
-  font-size: min(7vw,30px);
-  text-shadow: black 2px 2px 2px;
-}
+/* 
+共通
+*/
 
-.skill_wrapper{
-  /* width: 600px; */
-  padding: 0px;
-  padding-left: 40px;
-  min-width: 350px;
-  margin: 50px auto;
-  font-size: min(3vw,20px);
-  /* font-size: 20px; */
+.appear{
+  box-shadow: black 3px 3px 3px, rgb(255, 255, 255) -3px -1px 3px;
 }
 
 .container{
@@ -43,6 +35,11 @@
 
 .container h2{
   text-align: center;;
+}
+
+.container p{
+  width: 500px;
+  margin: 0 auto;
 }
 
 .wrapper{
@@ -59,14 +56,37 @@
 }
 
 .url_p , .code_p{
-  font-size: 90%;
+  font-size: 100%;
   margin: 0;
   padding: 0;
+}
+/* 
+共通ここまで
+*/
+
+.title{
+  width: min(90%,1200px);
+  margin: 0 auto;
+  margin-top: 10px;
+  color: rgb(81, 37, 240);
+  text-align: center;
+  font-size: min(7vw,30px);
+  text-shadow: black 2px 2px 2px;
+}
+
+.skill_wrapper{
+  max-width: 800px;
+  padding: 0px;
+  padding-left: 40px;
+  min-width: 350px;
+  margin: 50px auto;
+  font-size: min(3vw,20px);
+  /* font-size: 20px; */
 }
 
 @media screen and (max-width:600px){
   .url_p , .code_p{
-    font-size: 70%;
+    font-size: 90%;
   }
 }
 
