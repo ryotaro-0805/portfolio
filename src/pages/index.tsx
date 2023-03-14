@@ -33,26 +33,26 @@ export default function Home() {
   }, [targets]);
   // inntersection observer end
 
-  // 上スクロールバー出現
-  const [myCss,setMyCss]=useState(styles.arrow);
-  const [distance, setDistance]=useState(0);
-  useEffect(()=>{
-    addEventListener('scroll',(e)=>{
+  // 上スクロールバー出現 /メニュー出現
+  const [myCss, setMyCss] = useState(styles.arrow);
+  const [distance, setDistance] = useState(0);
+  useEffect(() => {
+    addEventListener('scroll', (e) => {
       setDistance(window.scrollY);
     });
-    if (distance>500){
-      setMyCss(`${styles. arrow} ${styles.active}`)
-    } else{
-      setMyCss(`${styles. arrow}`)
+    if (distance > 500) {
+      setMyCss(`${styles.arrow} ${styles.active}`)
+      setMyCss2(`${styles.main_menu_wrapper} ${styles.active2}`)
+    } else {
+      setMyCss(`${styles.arrow}`)
+      setMyCss2(`${styles.main_menu_wrapper}`)
     }
-  },[distance]); 
-    
-  // console.log(window.pageYOffset);
-  
-  // 移動量をとる
-  // 一定量移動したら上スクロールボタンにクラスを付与
+  }, [distance]);
+  // 上スクロールバー出現　/メニュー出現　end
 
-  // 上スクロールバー出現　end
+  // menu出現
+  const [myCss2, setMyCss2] = useState(styles.main_menu_wrapper);
+  // menu出現　end
 
   return (
     <>
@@ -63,14 +63,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       </Head>
-      
+
       <span className={`${myCss} material-symbols-outlined`}>
-      <a className={styles.arrow_a} href="#top">
-        arrow_circle_up
-      </a>
-        </span> {/* 上へのアイコン */}
+        <a className={styles.arrow_a} href="#top">
+          arrow_circle_up
+        </a>
+      </span> {/* 上へのアイコン */}
       <header>
         <h1 id='top' ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
+        <div className={myCss2}>
+          <h3 className={styles.main_menu}><a style={{color:'white'}} href="#website">Websites</a></h3>
+          <h3 className={styles.main_menu}><a style={{color:'white'}} href="#app">Applications</a></h3>
+          <h3 className={styles.main_menu}><a style={{color:'white'}} href="#practice">Practices</a></h3>
+        </div>
       </header>
       <main className={styles.main}>
         <div ref={addToTargets} className={`${styles.appear}`}>
@@ -123,7 +128,7 @@ export default function Home() {
         {/* 
         websites
       */}
-        <div className={`${styles.container}`}>
+        <div id='website' className={`${styles.container}`}>
           <h2>Websites</h2>
           <p className={styles.comment}>私が作成した、ウェブサイトの紹介です。</p>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
@@ -187,7 +192,7 @@ export default function Home() {
         {/* 
         applications
          */}
-        <div ref={addToTargets} className={`${styles.container} ${styles.applications_container} ${styles.appear}`}>
+        <div  id='app' ref={addToTargets} className={`${styles.container} ${styles.applications_container} ${styles.appear}`}>
           <h2>Applications</h2>
           <p className={styles.comment}>私が作成した、ウェブアプリです。</p>
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
@@ -267,7 +272,7 @@ export default function Home() {
         {/* 
         practice
          */}
-        <div ref={addToTargets} className={`${styles.container} ${styles.practices_container} ${styles.appear}`}>
+        <div  id='practice' ref={addToTargets} className={`${styles.container} ${styles.practices_container} ${styles.appear}`}>
           <h2>Practices</h2>
           <p className={styles.comment}>今までにコーディングの練習として作成したものを紹介しております。</p>
           <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
