@@ -40,7 +40,7 @@ export default function Home() {
     addEventListener('scroll', (e) => {
       setDistance(window.scrollY);
     });
-    if (distance > 400) {
+    if (distance > 500) {
       setMyCss(`${styles.arrow} ${styles.active}`)
       setMyCss2(`${styles.appear_menu_wrapper} ${styles.active2}`)
     } else {
@@ -237,7 +237,7 @@ export default function Home() {
               <h3>Feature / 特徴</h3>
               <p>定番のじゃんけんアプリです。</p>
               <p>デザインにもこだわり制作しました。</p>
-              <p>5回連続で勝利するとエンディングというゲーム性も確保しております。</p>
+              <p>5回連続で勝利するとエンディングというゲーム性も有しております。</p>
             </div>
             {/* 
              　スロット
