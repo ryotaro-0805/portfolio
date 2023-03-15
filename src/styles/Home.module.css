@@ -92,8 +92,8 @@ intersection observer end
 .main_menu_wrapper.active2{
   margin: 0 auto;
   background-color: aliceblue;
-  width: 85%;
-  padding: 10px;
+  width: 80%;
+  /* padding: 10px; */
   position: fixed;
   top: 0;
   left: 50%;
@@ -151,6 +151,10 @@ intersection observer end
 @media screen and (max-width:600px){
   .url_p , .code_p{
     font-size: 90%;
+  }
+
+  .main_menu{
+    padding: 5px 5px;
   }
 }
 
