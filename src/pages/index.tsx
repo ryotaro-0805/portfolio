@@ -42,16 +42,16 @@ export default function Home() {
     });
     if (distance > 400) {
       setMyCss(`${styles.arrow} ${styles.active}`)
-      setMyCss2(`${styles.main_menu_wrapper} ${styles.active2}`)
+      setMyCss2(`${styles.appear_menu_wrapper} ${styles.active2}`)
     } else {
       setMyCss(`${styles.arrow}`)
-      setMyCss2(`${styles.main_menu_wrapper}`)
+      setMyCss2(`${styles.appear_menu_wrapper}`)
     }
   }, [distance]);
   // 上スクロールバー出現　/メニュー出現　end
 
   // menu出現
-  const [myCss2, setMyCss2] = useState(styles.main_menu_wrapper);
+  const [myCss2, setMyCss2] = useState(`${styles.appear_menu_wrapper} ${styles.active2}`);
   // menu出現　end
 
   return (
@@ -71,10 +71,15 @@ export default function Home() {
       </span> {/* 上へのアイコン */}
       <header>
         <h1 id='top' ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
-        <div className={myCss2}>
+        <div className={styles.main_menu_wrapper}>
           <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#website">Websites</a></h3>
           <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#app">Applications</a></h3>
           <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#practice">Practices</a></h3>
+        </div>
+        <div className={myCss2}>
+          <h3 className={styles.appear_menu}><a style={{ color: 'white' }} href="#website">Websites</a></h3>
+          <h3 className={styles.appear_menu}><a style={{ color: 'white' }} href="#app">Applications</a></h3>
+          <h3 className={styles.appear_menu}><a style={{ color: 'white' }} href="#practice">Practices</a></h3>
         </div>
       </header>
       <main className={styles.main}>
@@ -128,7 +133,7 @@ export default function Home() {
         {/* 
         websites
       */}
-        <a id='website' className={styles.jump_margin} href=""></a>
+        <a id='website' className={styles.jump_margin}></a>
         <div ref={addToTargets} className={`${styles.container} ${styles.appear}`}>
         {/* <div className={`${styles.container}`}> */}
           <h2>Websites</h2>
