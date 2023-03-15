@@ -17,7 +17,7 @@ export default function Home() {
     }
   }
   const options = {
-    threshold: .2
+    threshold: 0
   }
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -40,7 +40,7 @@ export default function Home() {
     addEventListener('scroll', (e) => {
       setDistance(window.scrollY);
     });
-    if (distance > 500) {
+    if (distance > 400) {
       setMyCss(`${styles.arrow} ${styles.active}`)
       setMyCss2(`${styles.main_menu_wrapper} ${styles.active2}`)
     } else {
@@ -72,9 +72,9 @@ export default function Home() {
       <header>
         <h1 id='top' ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
         <div className={myCss2}>
-          <h3 className={styles.main_menu}><a style={{color:'white'}} href="#website">Websites</a></h3>
-          <h3 className={styles.main_menu}><a style={{color:'white'}} href="#app">Applications</a></h3>
-          <h3 className={styles.main_menu}><a style={{color:'white'}} href="#practice">Practices</a></h3>
+          <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#website">Websites</a></h3>
+          <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#app">Applications</a></h3>
+          <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#practice">Practices</a></h3>
         </div>
       </header>
       <main className={styles.main}>
@@ -128,7 +128,9 @@ export default function Home() {
         {/* 
         websites
       */}
-        <div id='website' className={`${styles.container}`}>
+        <a id='website' className={styles.jump_margin} href=""></a>
+        <div ref={addToTargets} className={`${styles.container} ${styles.appear}`}>
+        {/* <div className={`${styles.container}`}> */}
           <h2>Websites</h2>
           <p className={styles.comment}>私が作成した、ウェブサイトの紹介です。</p>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
@@ -192,7 +194,8 @@ export default function Home() {
         {/* 
         applications
          */}
-        <div  id='app' ref={addToTargets} className={`${styles.container} ${styles.applications_container} ${styles.appear}`}>
+        <a id='app' className={styles.jump_margin} href=""></a>
+        <div ref={addToTargets} className={`${styles.container} ${styles.appear}`}>
           <h2>Applications</h2>
           <p className={styles.comment}>私が作成した、ウェブアプリです。</p>
           <div className={`${styles.wrapper} ${styles.applications_wrapper}`}>
@@ -272,7 +275,8 @@ export default function Home() {
         {/* 
         practice
          */}
-        <div  id='practice' ref={addToTargets} className={`${styles.container} ${styles.practices_container} ${styles.appear}`}>
+        <a id='practice' className={styles.jump_margin} href=""></a>
+        <div ref={addToTargets} className={`${styles.container} ${styles.appear}`}>
           <h2>Practices</h2>
           <p className={styles.comment}>今までにコーディングの練習として作成したものを紹介しております。</p>
           <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>

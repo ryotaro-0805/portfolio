@@ -25,7 +25,6 @@ intersection observer end
   width: min(95%,1200px);
   min-width: 350px;
   margin: 0 auto;
-  margin-top: 50px;
   box-shadow: 5px 5px 5px rgb(117, 116, 116),  -2px -2px 10px rgb(240, 243, 204);
 }
 
@@ -36,7 +35,7 @@ intersection observer end
 .wrapper{
   display: flex;
   flex-wrap: wrap;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .wrapper div{
@@ -58,23 +57,30 @@ intersection observer end
   margin: 0;
   padding: 0;
 }
+
+.jump_margin{
+  display: block;
+  padding: 30px;
+}
+
 /* 
 共通ここまで
 */
 
 .title{
   width: min(90%,1200px);
-  margin: 0 auto;
-  margin-top: 10px;
+  margin: 50px auto;
   color: rgb(81, 37, 240);
   text-align: center;
   font-size: min(7vw,40px);
   text-shadow: black 2px 2px 2px;
 }
 
+/* 
+メニュー
+*/
 .main_menu_wrapper{
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 30px auto;
   width: 80%;
   max-width: 800px;
   display: flex;
@@ -84,8 +90,9 @@ intersection observer end
 }
 
 .main_menu_wrapper.active2{
+  margin: 0 auto;
   background-color: aliceblue;
-  width: 800%;
+  width: 85%;
   padding: 10px;
   position: fixed;
   top: 0;
@@ -123,6 +130,9 @@ intersection observer end
   background: linear-gradient(90deg ,#000,#fff);;
   transform: scale(1,1);
 }
+/* 
+メニュー　ここまで
+*/
 
 .skill_wrapper{
   max-width: 800px;
