@@ -1,3 +1,16 @@
+@keyframes load {
+    0%{
+        background-color: rgb(255, 255, 255);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -6,6 +19,7 @@ body{
     /* font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; */
     font-family:serif;
     background-color:rgb(243, 239, 242);
+    animation: load 1s;
 }
 
 *{
