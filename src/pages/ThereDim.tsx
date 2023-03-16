@@ -29,13 +29,16 @@ const Box: React.FC<BoxProps> = (props) => {
 };
 
 const ThereDim: NextPage = () => (
-  <div style={{ width: '100vw', height: '100vh' }}>
+  // <div style={{ width: '100vw', height: '100vh' }}>
     <Canvas>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
-      <Box position={[ -4, 3, -1]} />
+      <Box position={[ -5, 3, -2]} />
+      <Box position={[ -1, 3, -2]} />
+      <Box position={[ 3, 3, -2]} />
+      <Box position={[ 7, 3, -2]} />
     </Canvas>
-  </div>
+  // </div>
 );
 
 export default ThereDim;

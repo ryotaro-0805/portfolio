@@ -16,11 +16,10 @@ intersection observer
 intersection observer end
 */
 .threeDimention_wrapper{
-  background-color: antiquewhite;
   position: absolute;
-  top: 0;
-  left: 0;
-  /* transform: translateX(-50%); */
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* 
 共通
