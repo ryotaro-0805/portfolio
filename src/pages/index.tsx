@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import ThereDim from './ThereDim';
 
 export default function Home() {
   // inntersection observer start
@@ -63,13 +64,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       </Head>
-
       <span className={`${myCss} material-symbols-outlined`}>
         <a className={styles.arrow_a} href="#top">
           arrow_circle_up
         </a>
       </span> {/* 上へのアイコン */}
       <header>
+      <div className={styles.threeDimention_wrapper}>
+      <ThereDim />
+      </div>
         <h1 id='top' ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
         <div className={styles.main_menu_wrapper}>
           <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#website">Websites</a></h3>
@@ -135,7 +138,7 @@ export default function Home() {
       */}
         <a id='website' className={styles.jump_margin}></a>
         <div ref={addToTargets} className={`${styles.container} ${styles.appear}`}>
-        {/* <div className={`${styles.container}`}> */}
+          {/* <div className={`${styles.container}`}> */}
           <h2>Websites</h2>
           <p className={styles.comment}>私が作成した、ウェブサイトの紹介です。</p>
           <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
