@@ -33,7 +33,7 @@ const ThereDim: NextPage = () => (
     <Canvas>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
-      <Box position={[0, 1.5, 0]} />
+      <Box position={[ -4, 3, -1]} />
     </Canvas>
   </div>
 );

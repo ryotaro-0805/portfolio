@@ -73,7 +73,8 @@ export default function Home() {
       <div className={styles.threeDimention_wrapper}>
       <ThereDim />
       </div>
-        <h1 id='top' ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～</h1>
+        <h1 id='top' ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～
+        </h1>
         <div className={styles.main_menu_wrapper}>
           <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#website">Websites</a></h3>
           <h3 className={styles.main_menu}><a style={{ color: 'white' }} href="#app">Applications</a></h3>
