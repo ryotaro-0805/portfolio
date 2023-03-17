@@ -38,3 +38,11 @@ a{
 a:hover{
     opacity: .8;
 }
+
+/* 流れる文字 */
+.flow_sentence{
+    margin: 0 auto;
+    width: 500px;
+    white-space: nowrap;
+    color: red;
+  }
