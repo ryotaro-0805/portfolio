@@ -15,12 +15,7 @@ intersection observer
 /* 
 intersection observer end
 */
-.threeDimention_wrapper{
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 /* 
 共通
 */
@@ -75,7 +70,12 @@ intersection observer end
 /*
 3D
 */
-
+.threeDimention_wrapper{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /*
 3Dここまで

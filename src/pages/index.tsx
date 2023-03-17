@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import ThereDim from './ThereDim';
+import ThreeDemo from './ThreeDemo';
 
 export default function Home() {
   // inntersection observer start
@@ -71,7 +72,7 @@ export default function Home() {
       </span> {/* 上へのアイコン */}
       <header>
       <div className={styles.threeDimention_wrapper}>
-      <ThereDim />
+      <ThreeDemo />
       </div>
         <h1 id='top' ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～
         </h1>
