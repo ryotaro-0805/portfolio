@@ -41,8 +41,18 @@ a:hover{
 
 /* 流れる文字 */
 .flow_sentence{
+    font-size: 1rem;
     margin: 0 auto;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     white-space: nowrap;
     color: red;
   }
+
+  @media screen and (max-width: 600px) {
+    .flow_sentence{
+        font-size: .7rem;
+      }
+  }
+
+  
