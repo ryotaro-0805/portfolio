@@ -72,9 +72,11 @@ intersection observer end
 */
 .threeDimention_wrapper{
   position: absolute;
-  top: 0px;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
 }
 
 /*
