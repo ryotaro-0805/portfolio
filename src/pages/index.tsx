@@ -186,11 +186,18 @@ export default function Home() {
             瀬戸珈琲
              */}
             <div ref={addToTargets} className={`${styles.seto} ${styles.appear}`}>
+            <a href="https://seto-cafe-homepage.vercel.app/" target='_blank'>
               <h3>瀬戸珈琲</h3>
-              <h3>Feature</h3>
-              <p>texttexttext</p>
-              <h3>trouble point</h3>
-              <p>texttexttext</p>
+              <p className={styles.url_p}>url: https://seto-cafe-homepage.vercel.app/</p>
+              </a>
+              <hr />
+              <a href="https://github.com/ryotaro-0805/seto-cafe-homepage" target='_blank'>
+                <p className={styles.code_p}>code: https://github.com/ryotaro-0805/seto-cafe-homepage</p>
+              </a>
+              <hr />
+              <h3>Feature / 特徴</h3>
+              <p>『シック』、『愛情』をテーマにHTML,CSS,JavaScriptで作成しております。</p>
+              <p>知人が珈琲の焙煎が趣味だったので、ビジネスにする場合の参考サイトとして制作しました。</p>
             </div>
             {/* 
             ホームページ

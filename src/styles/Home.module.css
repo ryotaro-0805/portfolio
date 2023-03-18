@@ -210,6 +210,9 @@ intersection observer end
   background-position: 50% 50%;
 }
 
+/* 
+ホームページ画像
+ */
 .sanpatuya {
   background-image: url(../../public/img/sanpatuya.png);
 }
@@ -217,6 +220,15 @@ intersection observer end
 .kankyo {
   background-image: url(../../public/img/kankyokaihetu.jpg);
 }
+
+.seto{
+  background-image: url(../../public/img/seto-cafe.jpg);
+}
+
+/* 
+ホームページ画像ここまで
+ */
+
 
 .footer {
   width: 100%;
