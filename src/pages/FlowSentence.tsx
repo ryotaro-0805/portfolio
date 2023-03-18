@@ -8,7 +8,7 @@ const FlowSentence = () => {
 
       <div className='flow_Sentence'>
         <Marquee direction='left' speed={50} gradient={true} gradientColor={[243, 239, 242]}>
-        'Ryotaro'のポートフォリオをご覧いただきありがとうございます。ごゆっくりしていかれてください。　
+        　　　　　　　　　　　　　ポートフォリオをご覧いただきありがとうございます。　ごゆっくりして行ってください。　
         </Marquee>
       </div>
 

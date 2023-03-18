@@ -95,12 +95,12 @@ export default function Home() {
         <div ref={addToTargets} className={`${styles.appear}`}>
           <Swiper
             //autoplay={{"delay": 1000}} 追記 
-            autoplay={{ "delay": 1000 }}
+            autoplay={{ "delay": 5000 }}
             // デフォルト＋Autoplay, EffectFade追記
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             navigation
             // speed追記
-            speed={2000}
+            speed={1000}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
           >
