@@ -7,10 +7,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import ThereDim from './ThereDim';
 import ThreeDemo from './ThreeDemo';
 import FlowSentence from './FlowSentence';
-import video from '../../public/video/sample.mp4'
 
 export default function Home() {
   // inntersection observer start
@@ -67,7 +65,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       </Head>
-      <video src={video} autoPlay width={300}></video>
       <span className={`${myCss} material-symbols-outlined`}>
         <a className={styles.arrow_a} href="#top">
           arrow_circle_up
