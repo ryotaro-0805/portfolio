@@ -91,7 +91,7 @@ export default function Home() {
         </div>
       </header>
       <main className={styles.main}>
-        <div ref={addToTargets} className={`${styles.appear}`}>
+        <div ref={addToTargets} className={`${styles.appear} ${styles.swiper_container}`}>
           <Swiper
             //autoplay={{"delay": 1000}} 追記 
             autoplay={{ "delay": 5000 }}
@@ -315,6 +315,7 @@ export default function Home() {
               <p>texttexttext</p>
             </div>
             <div ref={addToTargets} className={`${styles.appear}`}>
+              <video src="/video/move-app.mp4" autoPlay muted width={'100%'}></video>
               <h3>自由に移動</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>

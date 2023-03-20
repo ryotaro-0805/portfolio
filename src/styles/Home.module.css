@@ -167,6 +167,11 @@ intersection observer end
 メニュー　ここまで
 */
 
+.swiper_container{
+  width: 80%;
+  margin: 0 auto;
+}
+
 .skill_wrapper {
   max-width: 800px;
   padding: 0px;
@@ -187,6 +192,10 @@ intersection observer end
     font-size: 90%;
   }
 
+  .swiper_container{
+    width: 100%;
+  }
+  
   .main_menu,
   .appear_menu {
     padding: 5px 5px;
