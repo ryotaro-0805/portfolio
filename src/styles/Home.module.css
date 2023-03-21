@@ -238,6 +238,19 @@ intersection observer end
 ホームページ画像ここまで
  */
 
+ /* 
+ practice
+  */
+ 
+  .practice_wrapper video{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+ /* 
+ practiceここまで
+  */
+
 
 .footer {
   width: 100%;
