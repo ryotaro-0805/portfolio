@@ -315,7 +315,7 @@ export default function Home() {
               <p>texttexttext</p>
             </div>
             <div ref={addToTargets} className={`${styles.appear}`}>
-              <video src="/video/move-app.mp4" autoPlay muted width={'100%'}></video>
+              <video src="/video/move-app.mp4" autoPlay muted poster="/img/move-app-pic.png" width={'100%'} loop playsInline></video>
               <h3>自由に移動</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
