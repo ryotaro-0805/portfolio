@@ -171,6 +171,7 @@ intersection observer end
 
 .swiper_container{
   width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
