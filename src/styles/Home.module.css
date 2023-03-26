@@ -21,11 +21,12 @@ intersection observer end
 */
 
 .container {
-  background: linear-gradient(135deg, rgb(229, 229, 233), rgb(234, 216, 229));
+  /* background: linear-gradient(135deg, rgb(229, 229, 233), rgb(234, 216, 229)); */
+  background-color: rgb(230, 227, 236);
   width: min(95%, 1200px);
   min-width: 350px;
   margin: 0 auto;
-  box-shadow: 5px 5px 5px rgb(117, 116, 116), -2px -2px 10px rgb(240, 243, 204);
+  /* box-shadow: 5px 5px 5px rgb(117, 116, 116), -2px -2px 10px rgb(240, 243, 204); */
 }
 
 .container h2 {
@@ -43,7 +44,7 @@ intersection observer end
   margin: 30px auto;
   background-color: aliceblue;
   border: solid 1px black;
-  box-shadow: black 3px 3px 3px, rgb(255, 255, 255) -3px -1px 3px;
+  box-shadow:#333 3px 3px 5px, rgb(255, 255, 255) -3px -1px 5px;
 }
 
 .comment {
@@ -86,7 +87,8 @@ intersection observer end
 .title {
   width: min(90%, 1200px);
   margin: 50px auto 10px;
-  color: rgb(81, 37, 240);
+  /* color: rgb(81, 37, 240); */
+  color: #333;
   text-align: center;
   font-size: min(7vw, 40px);
   text-shadow: black 2px 2px 2px;
@@ -259,7 +261,8 @@ intersection observer end
   color: #fff;
   text-shadow: #000000 3px 3px 3px;
   text-align: center;
-  background: linear-gradient(160deg, rgb(26, 2, 26), rgb(231, 28, 231));
+  /* background: linear-gradient(160deg, rgb(26, 2, 26), rgb(231, 28, 231)); */
+  background-color: #333;
 }
 
 /* 

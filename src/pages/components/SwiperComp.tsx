@@ -58,7 +58,8 @@ export default function SwiperComp() {
               <div className={`${styles.skill_wrapper}`}>
                 <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   star
-                </span>Skills</h3>
+                {/* </span>Skill <span className={styles.japanese_span}>スキル</span></h3> */}
+                </span><ruby>Skill<rt>スキル</rt></ruby></h3>
                 <p>HTML, CSS, JavaScript, React, Next.js, WordPress, PHP, SQL</p>
                 <p>Firebase, Firestore, Git, GitHub, Vercel</p>
                 <p>Photoshop, illustrator, XD, Premiere Pro</p>
@@ -68,7 +69,7 @@ export default function SwiperComp() {
               <div className={`${styles.skill_wrapper}`}>
                 <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   select_check_box
-                </span>About Me</h3>
+                </span><ruby>About me<rt>私について</rt></ruby></h3>
                 <p>～プロフィール～</p>
                 <p>＜受注可能な作業内容＞</p>
                 <p>ホームページ作成：モダンな言語で高速かつSEOに強いホームページを作成します。</p>
@@ -80,7 +81,7 @@ export default function SwiperComp() {
               <div className={`${styles.skill_wrapper}`}>
                 <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   arrow_outward
-                </span>Objective</h3>
+                </span><ruby>Objective<rt>未来の目標</rt></ruby></h3>
                 <p>モダンな言語、堅牢なシステム、型崩れしない表示を目指してコーディングを行います。</p>
                 <p>お客様のご要望に何なりと答えられるスキルを得られるよう日々精進しております。</p>
                 <p>フロントエンジニアの高みを目指します。</p>
