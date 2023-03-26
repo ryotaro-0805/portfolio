@@ -46,7 +46,7 @@ export default function Applicaton() {
             {/* 
             ToDoアプリ
              */}
-            <div ref={addToTargets} className={`${styles.appear}`}>
+            <div ref={addToTargets} className={`${styles.appear} ${styles.todoApp}`}>
               <a href="https://firebase-connection.vercel.app/" target='_blank'>
                 <h3>ToDoアプリ</h3>
                 <p className={styles.url_p}>url: https://firebase-connection.vercel.app/</p>
@@ -63,7 +63,7 @@ export default function Applicaton() {
             {/* 
               じゃんけん
              */}
-            <div ref={addToTargets} className={`${styles.appear}`}>
+            <div ref={addToTargets} className={`${styles.appear} ${styles.rockApp}`}>
               <a href="https://rock-app.vercel.app/" target='_blank'>
                 <h3>じゃんけん</h3>
                 <p className={styles.url_p}>url: https://rock-app.vercel.app/</p>
@@ -76,12 +76,12 @@ export default function Applicaton() {
               <h3>Feature / 特徴</h3>
               <p>定番のじゃんけんアプリです。</p>
               <p>デザインにもこだわり制作しました。</p>
-              <p>5回連続で勝利するとエンディングというゲーム性も有しております。</p>
+              <p>5回連続で勝利してエンディングを目指すというゲーム性も有しております。</p>
             </div>
             {/* 
              　スロット
              */}
-            <div ref={addToTargets} className={`${styles.appear}`}>
+            <div ref={addToTargets} className={`${styles.appear} ${styles.slotApp}`}>
               <a href="https://fighting-app.vercel.app/" target='_blank'>
                 <h3>スロット</h3>
                 <p className={styles.url_p}>url: https://fighting-app.vercel.app/</p>
@@ -99,7 +99,7 @@ export default function Applicaton() {
             {/* 
               仕事効率化
              */}
-            <div ref={addToTargets} className={`${styles.appear}`}>
+            <div ref={addToTargets} className={`${styles.appear} ${styles.usefulApp}`}>
               <a href="https://firebase-connection.vercel.app/" target='_blank'>
                 <h3>アプリ名</h3>
                 <p className={styles.url_p}>url: https://firebase-connection.vercel.app/</p>

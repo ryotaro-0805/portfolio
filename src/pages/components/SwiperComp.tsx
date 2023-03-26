@@ -60,8 +60,11 @@ export default function SwiperComp() {
                   star
                 {/* </span>Skill <span className={styles.japanese_span}>スキル</span></h3> */}
                 </span><ruby>Skill<rt>スキル</rt></ruby></h3>
+                <br />
                 <p>HTML, CSS, JavaScript, React, Next.js, WordPress, PHP, SQL</p>
+                <br />
                 <p>Firebase, Firestore, Git, GitHub, Vercel</p>
+                <br />
                 <p>Photoshop, illustrator, XD, Premiere Pro</p>
               </div>
             </SwiperSlide>
@@ -70,10 +73,11 @@ export default function SwiperComp() {
                 <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   select_check_box
                 </span><ruby>About me<rt>私について</rt></ruby></h3>
-                <p>～プロフィール～</p>
+                {/* <p>～プロフィール～</p> */}
                 <p>＜受注可能な作業内容＞</p>
-                <p>ホームページ作成：モダンな言語で高速かつSEOに強いホームページを作成します。</p>
-                <p>システム構築：お問い合わせシステム、入力データの保存、データベースアクセス等のシステム構築が可能です。</p>
+                <p>ホームページ制作：モダンな言語で高速かつSEOに強いホームページを作成します。</p>
+                <p>システム構築：お問い合わせフォーム、入力データの保存、データベースアクセス等のシステム構築が可能です。</p>
+                <p>Webアプリ作成：React/Next.jsを使用したWebアプリケーションを制作いたします。</p>
                 <p>稼働時間:50時間/月</p>
               </div>
             </SwiperSlide>
@@ -81,9 +85,9 @@ export default function SwiperComp() {
               <div className={`${styles.skill_wrapper}`}>
                 <h3><span style={{ marginRight: '5px', verticalAlign: '-5px' }} className="material-symbols-outlined">
                   arrow_outward
-                </span><ruby>Objective<rt>未来の目標</rt></ruby></h3>
-                <p>モダンな言語、堅牢なシステム、型崩れしない表示を目指してコーディングを行います。</p>
-                <p>お客様のご要望に何なりと答えられるスキルを得られるよう日々精進しております。</p>
+                </span><ruby>Objective<rt>目標</rt></ruby></h3>
+                <p>モダンな言語、堅牢なシステム、型崩れしない高速なサイトを制作するよう努力しています。</p>
+                <p>お客様のご要望に答えられるスキルを得られるよう日々精進しております。</p>
                 <p>フロントエンジニアの高みを目指します。</p>
               </div>
             </SwiperSlide>

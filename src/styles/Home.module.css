@@ -241,6 +241,46 @@ intersection observer end
 ホームページ画像ここまで
  */
 
+/*
+ application
+  */
+  .todoApp,
+  .rockApp,
+.slotApp,
+.usefulApp {
+  height: 500px;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.applications_wrapper p,
+.applications_wrapper h3 {
+  padding: 5px;
+  color: #fff;
+  text-shadow: black 2px 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.todoApp{
+  background-image: url(/img/todo-app.png);
+}
+
+.rockApp{
+  background-image: url(/img/rock-app.png);
+}
+
+.slotApp{
+  background-image: url(/img/slot-app.png);
+}
+
+.App{
+  background-image: url(/img/-app.png);
+}
+/*
+applicationここまで
+*/
+
+
  /* 
  practice
   */
