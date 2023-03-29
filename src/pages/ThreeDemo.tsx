@@ -1,8 +1,7 @@
 import * as THREE from 'three'
 import { useMemo, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Trail, Float, Line, Sphere, Stars } from '@react-three/drei'
-import { EffectComposer, Bloom } from '@react-three/postprocessing'
+import { Trail, Float, Line, Sphere} from '@react-three/drei'
 import { Vector3 } from 'three'
 
 
@@ -15,14 +14,9 @@ export default function ThreeDemo() {
   return (
     <Canvas camera={{ position: [0, 0, 10] }}>
       <Rig />
-      {/* <color attach="background" args={['black']} /> */}
       <Float speed={4} rotationIntensity={1} floatIntensity={2}>
         <Atom />
       </Float>
-      {/* <Stars saturation={0} count={400} speed={0.5} />
-      <EffectComposer>
-        <Bloom mipmapBlur luminanceThreshold={1} radius={0.7} />
-      </EffectComposer> */}
     </Canvas>
   )
 }

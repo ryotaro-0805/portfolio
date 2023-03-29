@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import React, { useRef, useEffect, useState } from 'react';
-// import ThreeDemo from './ThreeDemo';
+import ThreeDemo from './ThreeDemo';
 import FlowSentence from './FlowSentence';
 import Homepage from './components/Homepage';
 import Applicaton from './components/Application';
@@ -35,12 +35,12 @@ export default function Home() {
   // inntersection observer end
 
   // 3D重いので、ページを読み込んでから表示
-  const [loadState, setLoadState] = useState<boolean>(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoadState(true);
-    }, 5000);
-  }, []);
+  // const [loadState, setLoadState] = useState<boolean>(false);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoadState(true);
+  //   }, 5000);
+  // }, []);
 
   // 3D重いので、ページを読み込んでから表示　ここまで
 
@@ -81,9 +81,9 @@ export default function Home() {
         </a>
       </span> {/* 上へのアイコン */}
       <header>
-        {/* <div id='top' className={styles.threeDimention_wrapper}> */}
-          {/* {loadState ? <ThreeDemo /> : null} */}
-        {/* </div> */}
+        <div id='top' className={styles.threeDimention_wrapper}>
+          <ThreeDemo />
+        </div>
         <h1 ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～
         </h1>
         <div className="flow_sentence">
