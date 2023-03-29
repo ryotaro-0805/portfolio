@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import React, { useRef, useEffect, useState } from 'react';
-import ThreeDemo from './ThreeDemo';
+// import ThreeDemo from './ThreeDemo';
 import FlowSentence from './FlowSentence';
 import Homepage from './components/Homepage';
 import Applicaton from './components/Application';
@@ -10,7 +10,6 @@ import Footer from './components/Footer';
 import SwiperComp from './components/SwiperComp';
 
 export default function Home() {
-  
   // inntersection observer start
   const targets = useRef([]);
   const addToTargets = (el: never) => {
@@ -34,6 +33,17 @@ export default function Home() {
     });
   }, [targets]);
   // inntersection observer end
+
+  // 3D重いので、ページを読み込んでから表示
+  const [loadState, setLoadState] = useState<boolean>(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadState(true);
+    }, 5000);
+  }, []);
+
+  // 3D重いので、ページを読み込んでから表示　ここまで
+
 
   // 上スクロールバー出現 /メニュー出現
   const [myCss, setMyCss] = useState(styles.arrow);
@@ -71,9 +81,9 @@ export default function Home() {
         </a>
       </span> {/* 上へのアイコン */}
       <header>
-        <div id='top' className={styles.threeDimention_wrapper}>
-          <ThreeDemo />
-        </div>
+        {/* <div id='top' className={styles.threeDimention_wrapper}> */}
+          {/* {loadState ? <ThreeDemo /> : null} */}
+        {/* </div> */}
         <h1 ref={addToTargets} className={`${styles.title} ${styles.appear}`}>～Ryotaro's Portfolio～
         </h1>
         <div className="flow_sentence">
