@@ -7,7 +7,7 @@ const FlowSentence = () => {
     <div>
 
       <div className='flow_Sentence'>
-        <Marquee direction='left' speed={80} gradient={true} gradientColor={[255, 255, 255]} gradientWidth={50}>
+        <Marquee direction='left' speed={80} gradient={false} gradientColor={[255, 255, 255]} gradientWidth={50}>
         　　　　　　　　　　　　　ポートフォリオをご覧いただきありがとうございます。このサイトはNext.js/React-three-fiber/Swiper/React Fast Marqueeを使用して制作しております。ごゆっくりして行ってください。　
         </Marquee>
       </div>

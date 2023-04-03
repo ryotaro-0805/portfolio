@@ -75,6 +75,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       </Head>
+      <div className="bg"></div>
+<div className="bg bg2"></div>
+<div className="bg bg3"></div>
+<div className="content">
+</div>
       <span className={`${myCss} material-symbols-outlined`}>
         <a className={styles.arrow_a} href="#top">
           arrow_circle_up

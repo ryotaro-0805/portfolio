@@ -5,6 +5,7 @@
     }
     50%{
         opacity: 0;
+        background-color:rgb(132, 205, 216);
     }
     100%{
         opacity: 1;
@@ -19,7 +20,7 @@ body{
     /* font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; */
     font-family:serif;
     background-color:rgb(255, 255, 255);
-    /* animation: load 1s; */
+    animation: load 2s;
 }
 
 *{
@@ -55,4 +56,34 @@ a:hover{
       }
   }
 
+  /* back-ground-animation */
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
   
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  /* back-ground-animation ここまで*/
