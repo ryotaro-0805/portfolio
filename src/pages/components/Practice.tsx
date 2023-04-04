@@ -59,9 +59,9 @@ export default function Practice() {
               <p>texttexttext</p>
             </div>
             <div ref={addToTargets} className={`${styles.appear} ${styles.practice_wrapper}`}>
-              {/* <video autoPlay muted poster="/img/move-app-pic.png" loop playsInline> */}
-              {/* <source src="/video/move-app.mp4"/> */}
-              {/* </video> */}
+              <video autoPlay muted poster="/img/move-app-pic.png" loop playsInline>
+              <source src="/video/move-app.mp4"/>
+              </video>
               <h3>自由に移動</h3>
               <h3>Feature</h3>
               <p>texttexttext</p>
