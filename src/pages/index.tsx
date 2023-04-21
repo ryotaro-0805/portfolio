@@ -106,34 +106,34 @@ export default function Home() {
         </div>
         <div className={styles.main_menu_wrapper}>
           <h3 className={styles.main_menu}>
-            <a style={{ color: "white" }} href="#website">
+            <a href="#website">
               Websites
             </a>
           </h3>
           <h3 className={styles.main_menu}>
-            <a style={{ color: "white" }} href="#app">
+            <a href="#app">
               Applications
             </a>
           </h3>
           <h3 className={styles.main_menu}>
-            <a style={{ color: "white" }} href="#practice">
+            <a href="#practice">
               Practices
             </a>
           </h3>
         </div>
         <div className={myCss2}>
           <h3 className={styles.appear_menu}>
-            <a style={{ color: "white" }} href="#website">
+            <a href="#website">
               Websites
             </a>
           </h3>
           <h3 className={styles.appear_menu}>
-            <a style={{ color: "white" }} href="#app">
+            <a href="#app">
               Applications
             </a>
           </h3>
           <h3 className={styles.appear_menu}>
-            <a style={{ color: "white" }} href="#practice">
+            <a href="#practice">
               Practices
             </a>
           </h3>
