@@ -139,7 +139,7 @@ intersection observer end
   transform: scale(1, 1);
 }
 
-.main_menu a {
+.menu_a {
   color: #fff;
 }
 
@@ -286,8 +286,8 @@ applicationここまで
 /* 
  practice
   */
-  
-  /* 
+
+/* 
   .todoApp,
   .rockApp,
   .slotApp,
@@ -304,7 +304,6 @@ applicationここまで
     text-shadow: black 2px 2px 2px;
     background-color: rgba(0, 0, 0, 0.5);
   } */
-
 
 .practice_wrapper {
   position: relative;
