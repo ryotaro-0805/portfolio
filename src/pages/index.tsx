@@ -8,6 +8,7 @@ import Applicaton from "./components/Application";
 import Practice from "./components/Practice";
 import Footer from "./components/Footer";
 import SwiperComp from "./components/SwiperComp";
+import { motion } from "framer-motion";
 
 export default function Home() {
   // inntersection observer start
@@ -33,16 +34,6 @@ export default function Home() {
     });
   }, [targets]);
   // inntersection observer end
-
-  // 3D重いので、ページを読み込んでから表示
-  // const [loadState, setLoadState] = useState<boolean>(false);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoadState(true);
-  //   }, 5000);
-  // }, []);
-
-  // 3D重いので、ページを読み込んでから表示　ここまで
 
   // 上スクロールバー出現 /メニュー出現
   const [myCss, setMyCss] = useState(styles.arrow);
@@ -84,6 +75,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
         />
       </Head>
+
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>
@@ -98,52 +90,74 @@ export default function Home() {
         <div id="top" className={styles.threeDimention_wrapper}>
           <ThreeDemo />
         </div>
-        <h1 ref={addToTargets} className={`${styles.title} ${styles.appear}`}>
-          ～Ryotaro's Portfolio～
-        </h1>
-        <div className="flow_sentence">
-          <FlowSentence />
-        </div>
-        <div className={styles.main_menu_wrapper}>
-          <h3 className={styles.main_menu}>
-            <a className={styles.menu_a} href="#website">
-              Websites
-            </a>
-          </h3>
-          <h3 className={styles.main_menu}>
-            <a className={styles.menu_a} href="#app">
-              Applications
-            </a>
-          </h3>
-          <h3 className={styles.main_menu}>
-            <a className={styles.menu_a} href="#practice">
-              Practices
-            </a>
-          </h3>
-        </div>
-        <div className={myCss2}>
-          <h3 className={styles.appear_menu}>
-            <a className={styles.menu_a} href="#website">
-              Websites
-            </a>
-          </h3>
-          <h3 className={styles.appear_menu}>
-            <a className={styles.menu_a} href="#app">
-              Applications
-            </a>
-          </h3>
-          <h3 className={styles.appear_menu}>
-            <a className={styles.menu_a} href="#practice">
-              Practices
-            </a>
-          </h3>
-        </div>
+        <motion.div
+          initial={{ y: -100 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        // exit={{ opacity: 0 }}
+        >
+          <h1 ref={addToTargets} className={`${styles.title} ${styles.appear}`}>
+            ～Ryotaro's Portfolio～
+          </h1>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.8 }}
+        // exit={{ opacity: 0 }}
+        >
+
+          <div className="flow_sentence">
+            <FlowSentence />
+          </div>
+          <div className={styles.main_menu_wrapper}>
+            <h3 className={styles.main_menu}>
+              <a className={styles.menu_a} href="#website">
+                Websites
+              </a>
+            </h3>
+            <h3 className={styles.main_menu}>
+              <a className={styles.menu_a} href="#app">
+                Applications
+              </a>
+            </h3>
+            <h3 className={styles.main_menu}>
+              <a className={styles.menu_a} href="#practice">
+                Practices
+              </a>
+            </h3>
+          </div>
+          <div className={myCss2}>
+            <h3 className={styles.appear_menu}>
+              <a className={styles.menu_a} href="#website">
+                Websites
+              </a>
+            </h3>
+            <h3 className={styles.appear_menu}>
+              <a className={styles.menu_a} href="#app">
+                Applications
+              </a>
+            </h3>
+            <h3 className={styles.appear_menu}>
+              <a className={styles.menu_a} href="#practice">
+                Practices
+              </a>
+            </h3>
+          </div>
+        </motion.div>
       </header>
       <main className={styles.main}>
-        <SwiperComp />
-        <Homepage />
-        <Applicaton />
-        <Practice />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2 }}
+        // exit={{ opacity: 0 }}
+        >
+          <SwiperComp />
+          <Homepage />
+          <Applicaton />
+          <Practice />
+        </motion.div>
       </main>
       <Footer />
     </>
