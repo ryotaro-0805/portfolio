@@ -91,7 +91,7 @@ export default function Home() {
           <ThreeDemo />
         </div>
         <motion.div
-          initial={{ y: -100 }}
+          initial={{ y: '-200px' }}
           animate={{ y: 0 }}
           transition={{ duration: 1, delay: 1 }}
         // exit={{ opacity: 0 }}
