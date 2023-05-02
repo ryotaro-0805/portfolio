@@ -28,6 +28,8 @@ export default function Footer() {
             potted_plant
           </span>
           This page is created by Ryotaro
+          <br />
+          Copyright © 2023 Ryotaro's Portfolio All Rights Resarved.
         </h3>
       </footer>
     </>

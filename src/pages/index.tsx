@@ -62,14 +62,14 @@ export default function Home() {
     <>
       <Head>
         <title>
-          フロントエンドエンジニア Ryotaro のポートフォリオサイトです。
+          フロントエンドエンジニア Ryotaro のポートフォリオサイト
         </title>
         <meta
           name="description"
-          content="フロントエンドエンジニア Ryotaro のポートフォリオサイト"
+          content="フロントエンドエンジニア Ryotaro のポートフォリオサイトです。"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico?v=2" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -103,7 +103,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.8 }}
+          transition={{ duration: 1.5, delay: 2.5 }}
         // exit={{ opacity: 0 }}
         >
 
@@ -150,7 +150,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
+          transition={{ duration: 1.5, delay: 3 }}
         // exit={{ opacity: 0 }}
         >
           <SwiperComp />

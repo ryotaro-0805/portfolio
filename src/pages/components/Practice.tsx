@@ -57,13 +57,33 @@ export default function Practice() {
           今までにコーディングの練習として作成したものを紹介しております。
         </p>
         <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
-          <div ref={addToTargets} className={`${styles.appear}`}>
-            <h3>Swiper</h3>
-            <h3>Feature</h3>
-            <p>texttexttext</p>
-            <h3>trouble point</h3>
-            <p>texttexttext</p>
+          {/* Swiper React */}
+          <div
+            ref={addToTargets}
+            className={`${styles.appear} ${styles.practice_wrapper}`}
+          >
+            <video
+              autoPlay
+              muted
+              poster="/img/swiper-practice.jpg"
+              loop
+              playsInline
+            >
+              <source src="/video/swiper-practice.mp4" />
+            </video>
+            <div className={styles.innerText}>
+              <a
+                href="https://swiper-practice-roan.vercel.app/"
+                target="_blank"
+              >
+
+                <h3>Swiper React</h3>
+              </a>
+              <p>JavaScriptで制作しております。</p>
+            </div>
           </div>
+          {/*  */}
+
           <div ref={addToTargets} className={`${styles.appear}`}>
             <h3>流れる文字</h3>
             <h3>Feature</h3>
