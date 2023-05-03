@@ -1,5 +1,6 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+// import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Practice.module.css";
 import React, { useRef, useEffect } from "react";
 
 export default function Practice() {
@@ -57,42 +58,33 @@ export default function Practice() {
           今までにコーディングの練習として作成したものを紹介しております。
         </p>
         <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
+
           {/* Swiper React */}
           <div
             ref={addToTargets}
-            className={`${styles.appear} ${styles.practice_wrapper}`}
+            className={`${styles.appear} ${styles.inner_wrapper_practice}`}
           >
-            <video
-              autoPlay
-              muted
-              poster="/img/swiper-practice.jpg"
-              loop
-              playsInline
-            >
-              <source src="/video/swiper-practice.mp4" />
-            </video>
-            <div className={styles.innerText}>
-              <a
-                href="https://swiper-practice-roan.vercel.app/"
-                target="_blank"
+            <div className={styles.text_wrapper_practice}>
+              <h3>Swiper React</h3>
+              <p>Reactでホームページを作るときのSwiper導入のため作成しました。</p>
+            </div>
+            <div className={styles.video_wrapper_practice}>
+              <video
+                className={styles.video_practice}
+                autoPlay
+                muted
+                poster="/img/swiper-practice.jpg"
+                loop
+                playsInline
               >
-
-                <h3>Swiper React</h3>
-              </a>
-              <p>JavaScriptで制作しております。</p>
+                <source src="/video/swiper-practice.mp4" />
+              </video>
             </div>
           </div>
-          {/*  */}
+          {/* Swiper React end */}
 
-          <div ref={addToTargets} className={`${styles.appear}`}>
-            <h3>流れる文字</h3>
-            <h3>Feature</h3>
-            <p>texttexttext</p>
-            <h3>trouble point</h3>
-            <p>texttexttext</p>
-          </div>
           {/* 自由に移動 */}
-          <div
+          {/* <div
             ref={addToTargets}
             className={`${styles.appear} ${styles.practice_wrapper}`}
           >
@@ -128,16 +120,9 @@ export default function Practice() {
               <p>JavaScriptで制作しております。</p>
               <p></p>
             </div>
-          </div>
+          </div> */}
           {/* 自由に移動　ここまで */}
 
-          <div ref={addToTargets} className={`${styles.appear}`}>
-            <h3>useful App</h3>
-            <h3>Feature</h3>
-            <p>texttexttext</p>
-            <h3>trouble point</h3>
-            <p>texttexttext</p>
-          </div>
         </div>
       </div>
       {/* 

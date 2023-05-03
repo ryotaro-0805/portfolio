@@ -145,16 +145,6 @@ export default function Homepage() {
               SEO対策も施しているため、架空のショップサイトですが検索エンジンでの順位は上位となっています。
             </p>
           </div>
-          {/* 
-            ホームページ
-             */}
-          <div ref={addToTargets} className={`${styles.site} ${styles.appear}`}>
-            <h3>site name</h3>
-            <h3>Feature</h3>
-            <p>texttexttext</p>
-            <h3>trouble point</h3>
-            <p>texttexttext</p>
-          </div>
         </div>
       </div>
       {/*

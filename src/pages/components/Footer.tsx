@@ -20,17 +20,20 @@ export default function Footer() {
         />
       </Head>
       <footer className={styles.footer}>
-        <h3>
-          <span
-            style={{ marginRight: "5px", verticalAlign: "-5px" }}
-            className="material-symbols-outlined"
-          >
-            potted_plant
-          </span>
-          This page is created by Ryotaro
-          <br />
-          Copyright © 2023 Ryotaro's Portfolio All Rights Resarved.
-        </h3>
+        <div className={styles.footer_wrapper_div}>
+
+          <h3>
+            <span
+              style={{ marginRight: "5px", verticalAlign: "-5px" }}
+              className="material-symbols-outlined"
+            >
+              potted_plant
+            </span>
+            This page is created by Ryotaro
+            <br />
+            Copyright © 2023 Ryotaro's Portfolio All Rights Resarved.
+          </h3>
+        </div>
       </footer>
     </>
   );

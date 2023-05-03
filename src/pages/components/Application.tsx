@@ -140,33 +140,6 @@ export default function Applicaton() {
               今後はグラフィック、サウンド、コインの増減等を追加して、ゲーム性を拡充していく予定です。
             </p>
           </div>
-          {/* 
-              仕事効率化
-             */}
-          <div
-            ref={addToTargets}
-            className={`${styles.appear} ${styles.usefulApp}`}
-          >
-            <a href="https://firebase-connection.vercel.app/" target="_blank">
-              <h3>アプリ名</h3>
-              <p className={styles.url_p}>
-                url: https://firebase-connection.vercel.app/
-              </p>
-            </a>
-            <hr />
-            <a
-              href="https://github.com/ryotaro-0805/todo-App-using-firebase"
-              target="_blank"
-            >
-              <p className={styles.code_p}>
-                code: https://github.com/ryotaro-0805/todo-App-using-firebase
-              </p>
-            </a>
-            <hr />
-            <h3>Feature / 特徴</h3>
-            <p>ここに特徴が入ります。</p>
-            <p>ここに特徴が入ります。</p>
-          </div>
         </div>
       </div>
       {/*

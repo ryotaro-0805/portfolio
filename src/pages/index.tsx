@@ -11,7 +11,7 @@ import SwiperComp from "./components/SwiperComp";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  // inntersection observer start
+  // intersection observer start
   const targets = useRef([]);
   const addToTargets = (el: never) => {
     if (el && !targets.current?.includes(el)) {
@@ -33,7 +33,7 @@ export default function Home() {
       observer.observe(target);
     });
   }, [targets]);
-  // inntersection observer end
+  // intersection observer end
 
   // 上スクロールバー出現 /メニュー出現
   const [myCss, setMyCss] = useState(styles.arrow);

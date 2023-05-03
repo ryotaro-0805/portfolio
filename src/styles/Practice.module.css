@@ -1,0 +1,91 @@
+/*
+intersection observer 
+*/
+.appear {
+    opacity: 0;
+    transform: translateX(-5%) scale(0.9);
+    transition: 1s;
+}
+
+.appear.active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+/* 
+  intersection observer end
+  */
+
+/* 
+  共通
+  */
+
+.container {
+    background-color: rgb(230, 227, 236);
+    width: min(95%, 1200px);
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.wrapper {
+    width: min(95%, 500px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+/* .wrapper div {
+    margin: 30px auto;
+} */
+
+.comment {
+    margin-inline: auto;
+    max-inline-size: max-content;
+    padding: 0 20px;
+}
+
+.jump_margin {
+    display: block;
+    padding-top: 60px;
+}
+
+/* 
+共通ここまで
+*/
+
+/* 
+practice
+*/
+
+.inner_wrapper_practice {
+    width: 500px;
+    height: 500px;
+    border: solid 1px black;
+    box-shadow: #333 3px 3px 5px, rgb(255, 255, 255) -3px -1px 5px;
+    background-color: aliceblue;
+}
+
+.text_wrapper_practice {
+    width: 100%;
+    height: 20%;
+    padding: 0 20px;
+}
+.video_wrapper_practice {
+    width: 100%;
+    height: 80%;
+}
+
+.video_practice {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 
+   practiceここまで
+    */
