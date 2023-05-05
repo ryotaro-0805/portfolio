@@ -232,17 +232,17 @@ intersection observer end
  */
 .sanpatuya {
   background-image: url(../../public/img/sanpatuya.png);
-  background-position: -150px 200px;
+  background-position: 50% 150px;
 }
 
 .kankyo {
   background-image: url(../../public/img/kankyokaihetu.jpg);
-  background-position: -30px 100px;
+  background-position: 50% 230px;
 }
 
 .seto {
   background-image: url(../../public/img/seto-cafe.jpg);
-  background-position: -70px 250px;
+  background-position: 50% 230px;
 }
 
 /* 

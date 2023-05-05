@@ -58,7 +58,6 @@ export default function Practice() {
           今までにコーディングの練習として作成したものを紹介しております。
         </p>
         <div className={`${styles.wrapper} ${styles.practices_wrapper}`}>
-
           {/* Swiper React */}
           <div
             ref={addToTargets}
@@ -84,44 +83,28 @@ export default function Practice() {
           {/* Swiper React end */}
 
           {/* 自由に移動 */}
-          {/* <div
+          <div
             ref={addToTargets}
-            className={`${styles.appear} ${styles.practice_wrapper}`}
+            className={`${styles.appear} ${styles.inner_wrapper_practice}`}
           >
-            <video
-              autoPlay
-              muted
-              poster="/img/move-app-pic.png"
-              loop
-              playsInline
-            >
-              <source src="/video/move-app.mp4" />
-            </video>
-            <div className={styles.innerText}>
-              <a
-                href="https://homepage-kankyokaihatu.vercel.app"
-                target="_blank"
-              ></a>
+            <div className={styles.text_wrapper_practice}>
               <h3>自由に移動</h3>
-              <p className={styles.url_p}>
-                url: https://homepage-kankyokaihatu.vercel.app/
-              </p>
-              <hr />
-              <a
-                href="https://github.com/ryotaro-0805/homepage-kankyokaihatu"
-                target="_blank"
-              >
-                <p className={styles.code_p}>
-                  code: https://github.com/ryotaro-0805/homepage-kankyokaihatu
-                </p>
-              </a>
-              <hr />
-              <h3>Feature / 特徴</h3>
-              <p>JavaScriptで制作しております。</p>
-              <p></p>
+              <p>ホームページでマウスに追従するオブジェクトを制作するための練習として作りました。</p>
             </div>
-          </div> */}
-          {/* 自由に移動　ここまで */}
+            <div className={styles.video_wrapper_practice}>
+              <video
+                className={styles.video_practice}
+                autoPlay
+                muted
+                poster="/img/move-app-pic.png"
+                loop
+                playsInline
+              >
+                <source src="/video/move-app.mp4" />
+              </video>
+            </div>
+          </div>
+          {/* 自由に移動　end */}
 
         </div>
       </div>

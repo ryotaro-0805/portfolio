@@ -32,11 +32,7 @@ intersection observer
 }
 
 .wrapper {
-    width: min(95%, 500px);
-    display: flex;
     flex-wrap: wrap;
-    margin: 0px auto;
-    margin-top: 30px;
 }
 
 /* .wrapper div {
@@ -62,9 +58,14 @@ intersection observer
 practice
 */
 
+.practices_wrapper {
+    display: flex;
+}
+
 .inner_wrapper_practice {
     width: 500px;
     height: 500px;
+    margin: 30px auto;
     border: solid 1px black;
     box-shadow: #333 3px 3px 5px, rgb(255, 255, 255) -3px -1px 5px;
     background-color: aliceblue;
