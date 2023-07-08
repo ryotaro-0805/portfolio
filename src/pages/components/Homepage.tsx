@@ -57,6 +57,37 @@ export default function Homepage() {
         <p className={styles.comment}>私が作成した、ウェブサイトの紹介です。</p>
         <div className={`${styles.wrapper} ${styles.websites_wrapper}`}>
           {/* 
+            ザ・ブルースカイキャンプ場
+            */}
+          <div
+            ref={addToTargets}
+            className={`${styles.blueSky} ${styles.appear}`}
+          >
+            <a
+              href="https://homepage-blue-sky-camping.vercel.app/"
+              target="_blank"
+            >
+              <h3>ザ・ブルースカイキャンプ場</h3>
+              <p className={styles.url_p}>
+                url: https://homepage-blue-sky-camping.vercel.app/
+              </p>
+            </a>
+            <hr />
+            <a href="git@github.com:ryotaro-0805/portfolio.git" target="_blank">
+              <p className={styles.code_p}>
+                code: git@github.com:ryotaro-0805/portfolio.git
+              </p>
+            </a>
+            <hr />
+            <h3>Feature / 特徴</h3>
+            <p>
+              『本格的なホームページ作成』をテーマにHTML,CSS,JavaScriptで作成しております。
+            </p>
+            <p>
+              SEO対策も施しているため架空のサイトですが、検索エンジンでの順位は上位となっています。
+            </p>
+          </div>
+          {/* 
             ザ・サンパツヤ
             */}
           <div
@@ -84,7 +115,7 @@ export default function Homepage() {
               『キュート』、『親しみ』をテーマにHTML,CSS,JavaScriptで作成しております。
             </p>
             <p>
-              SEO対策も施しているため、架空のショップサイトですが検索エンジンでの順位は上位となっています。
+              SEO対策も施しているため架空のショップサイトですが、検索エンジンでの順位は上位となっています。
             </p>
           </div>
           {/* 

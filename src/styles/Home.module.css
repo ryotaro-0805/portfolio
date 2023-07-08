@@ -218,6 +218,7 @@ intersection observer end
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.blueSky,
 .sanpatuya,
 .kankyo,
 .seto,
@@ -230,6 +231,12 @@ intersection observer end
 /* 
 ホームページ画像
  */
+
+.blueSky {
+  background-image: url(../../public/img/blue-sky-camping.jpg);
+  background-position: 0% 250px;
+}
+
 .sanpatuya {
   background-image: url(../../public/img/sanpatuya.png);
   background-position: 50% 150px;
